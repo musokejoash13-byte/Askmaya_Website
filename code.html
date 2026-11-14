@@ -1,0 +1,1852 @@
+<!DOCTYPE html><html class="scroll-smooth stitch-anim-fade-in" lang="en" style="min-height: 100vh; height: auto; scroll-behavior: smooth;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AskMaya Cleaning Services | We Clean It All | Kampala &amp; Entebbe</title>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Font Awesome Icons CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: {
+              DEFAULT: '#081b4e',
+              dark: '#051133',
+              card: '#0a256e',
+              deep: '#030c24'
+            },
+            brandBlue: {
+              DEFAULT: '#00a3ff',
+              hover: '#0284c7',
+              light: '#e0f2fe'
+            },
+            brandCyan: '#06b6d4',
+            brandMint: '#10b981',
+            brandSlate: '#f8fafc',
+            brandMuted: '#64748b',
+            primary: '#005f50',
+            'primary-container': '#0d7a68'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif']
+          },
+          fontSize: {
+            xs: ['0.825rem', { lineHeight: '1.1rem' }],
+            sm: ['0.9625rem', { lineHeight: '1.375rem' }],
+            base: ['1.1rem', { lineHeight: '1.65rem' }],
+            lg: ['1.2375rem', { lineHeight: '1.75rem' }],
+            xl: ['1.375rem', { lineHeight: '1.925rem' }],
+            '2xl': ['1.65rem', { lineHeight: '2.2rem' }],
+            '3xl': ['2.0625rem', { lineHeight: '2.475rem' }],
+            '4xl': ['2.475rem', { lineHeight: '2.75rem' }],
+            '5xl': ['3.3rem', { lineHeight: '3.575rem' }],
+            '6xl': ['4.125rem', { lineHeight: '4.675rem' }]
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-animations">
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 15px rgba(0, 163, 255, 0.35); }
+      50% { box-shadow: 0 0 28px rgba(0, 163, 255, 0.7); }
+    }
+    .glow-active {
+      animation: pulseGlow 3s infinite ease-in-out;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #00a3ff 0%, #38bdf8 50%, #34d399 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .faq-collapse {
+      transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    section[id] {
+      scroll-margin-top: 8rem;
+    }
+    .maya-mobile-back {
+      display: none;
+    }
+    @media (min-width: 1280px) {
+      .max-w-7xl {
+        max-width: min(96vw, 1600px) !important;
+      }
+    }
+    @media (max-width: 767px) {
+      #maya-panel:not(.hidden) {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        display: flex;
+        width: 100vw;
+        max-width: 100vw;
+        height: 100dvh;
+        max-height: 100dvh;
+        flex-direction: column;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+      }
+      #maya-panel > header {
+        margin: 0;
+        border-radius: 0;
+        padding-top: max(1rem, env(safe-area-inset-top));
+      }
+      #maya-messages {
+        height: auto;
+        min-height: 0;
+        flex: 1;
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+      }
+      #maya-panel > div:last-child {
+        margin: 0;
+        border-radius: 0;
+        padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+      }
+      #maya-panel:not(.hidden) + #maya-launcher {
+        display: none;
+      }
+      .maya-mobile-back {
+        display: flex;
+      }
+      .maya-desktop-close {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#f6fafe] text-slate-800 font-sans antialiased overflow-x-hidden min-h-screen">
+<div id="website-view">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#051336]/95 backdrop-blur-md shadow-2xl border-b border-cyan-500/20 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between py-5 min-h-[112px] md:min-h-[120px]">
+<!-- Left Brand Identity: enlarged, luxurious white rounded emblem card -->
+<div class="flex items-center gap-4 sm:gap-5 py-1">
+<a aria-label="AskMaya Cleaning Homepage" class="bg-white rounded-2xl p-2.5 shadow-2xl shadow-cyan-500/20 flex items-center justify-center w-20 h-20 sm:w-[84px] sm:h-[84px] flex-shrink-0 group hover:scale-105 hover:shadow-cyan-400/35 transition-all duration-300 border border-white/60 ring-2 ring-white/20" href="#home">
+<img alt="AskMaya Logo" class="h-full w-full object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105" src="/askmaya_logo.jpeg">
+</a>
+<div class="flex flex-col justify-center select-none">
+<div class="flex items-center gap-2.5 leading-none">
+<span class="text-2xl sm:text-3xl lg:text-[32px] font-black tracking-tight text-white font-sans">Ask<span class="text-brandBlue">Maya</span></span>
+<span class="inline-flex items-center gap-1 bg-brandCyan/20 border border-cyan-400/50 text-cyan-300 text-[10px] sm:text-[11px] font-extrabold uppercase px-2.5 py-0.5 rounded-full tracking-wider shadow-sm">
+<i class="fa-solid fa-sparkles text-[9px] text-cyan-300"></i> ELITE
+      </span>
+</div>
+<span class="text-xs sm:text-sm uppercase font-extrabold tracking-widest text-[#00c2ff] mt-2 leading-none flex items-center gap-2">
+<span class="">WE CLEAN IT ALL</span>
+
+
+</span>
+</div>
+</div>
+<!-- Desktop Navigation Links: spacious, comfortable text-base with pill hover styling -->
+<nav class="hidden xl:flex items-center space-x-6 2xl:space-x-8 text-[15px] font-semibold text-slate-200">
+<a class="text-brandCyan font-bold hover:text-white px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#home">Home</a>
+<a class="hover:text-brandCyan px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#about">About Us</a>
+<a class="hover:text-brandCyan px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#services">Services</a>
+<a class="hover:text-brandCyan px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#masterclass">Masterclass</a>
+<a class="hover:text-brandCyan px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#team">Our Team</a>
+<a class="hover:text-brandCyan px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#faq">FAQs</a>
+<a class="hover:text-brandCyan px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#contact">Contact</a>
+</nav>
+<!-- Header Actions: Client Portal -->
+<div class="hidden lg:flex items-center space-x-3 2xl:space-x-4">
+<!-- Single Sleek Client Portal Button -->
+<button class="group flex items-center gap-2 bg-blue-600/30 hover:bg-blue-600 text-white border border-cyan-400/40 hover:border-cyan-300 rounded-full px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer shadow-md shadow-blue-900/40" onclick="window.openPortalModal()" type="button">
+<span class="w-6 h-6 rounded-full bg-cyan-400/20 text-cyan-300 flex items-center justify-center text-xs group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-shield-halved"></i>
+</span>
+<span class="tracking-wide">Client Portal</span>
+</button>
+</div>
+<!-- Mobile Hamburger Button -->
+<div class="lg:hidden flex items-center gap-2 sm:gap-3">
+<button class="flex items-center gap-1.5 bg-blue-600/30 text-white border border-cyan-400/40 rounded-full px-3 py-2 text-xs font-semibold" onclick="window.openPortalModal()" type="button">
+<i class="fa-solid fa-shield-halved text-cyan-300 text-xs"></i>
+<span class="">Portal</span>
+</button>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation" class="text-white hover:text-brandCyan p-3 rounded-2xl bg-white/10 border border-white/15 focus:outline-none transition" id="mobile-menu-btn" type="button">
+<i class="fa-solid fa-bars-staggered text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Dropdown Menu -->
+<div class="hidden lg:hidden bg-[#051336] border-b border-white/10 px-5 pt-3 pb-6 space-y-3" id="mobile-nav">
+<a class="block py-2 text-brandCyan font-bold" href="#home">Home</a>
+<a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#about">About Us</a>
+<a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#services">Our Services</a>
+<a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#masterclass">Masterclass</a>
+<a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#team">Our Team</a>
+<a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#faq">FAQs</a>
+<a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#contact">Contact</a>
+<button class="w-full flex items-center justify-between py-3 px-4 bg-white/10 hover:bg-white/15 text-white font-bold rounded-xl border border-white/15 mt-2 text-xs transition cursor-pointer" onclick="window.openPortalModal(); document.getElementById('mobile-nav').classList.add('hidden');" type="button">
+<span class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-brandCyan text-sm"></i><span class="">AskMaya Client Portal Login</span></span>
+<span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider bg-emerald-500/20 px-2.5 py-1 rounded-full border border-emerald-500/30">Open Dashboard →</span>
+</button>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative bg-gradient-to-b from-brandNavy via-brandNavy-card to-brandNavy-dark text-white pt-16 pb-24 overflow-hidden" id="home" style="background-image: linear-gradient(90deg, rgba(5, 17, 51, 0.82) 0%, rgba(5, 17, 51, 0.7) 50%, rgba(5, 17, 51, 0.48) 100%), url('/assets/hero-cleaning.jpeg'); background-size: cover; background-position: center center;">
+<div class="absolute -top-40 -right-40 w-96 h-96 bg-brandBlue/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 bg-brandCyan/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<!-- Left Hero Pitch -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/15 text-xs sm:text-sm font-semibold text-brandCyan">
+<span class="w-2 h-2 rounded-full bg-brandCyan animate-ping"></span>
+<span class="">AskMaya Executive Hygiene Solutions</span>
+<i class="fa-solid fa-sparkles text-brandBlue ml-1"></i>
+</div>
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-serif leading-[1.15] text-white">
+              Premium Living &amp; Commercial Cleaning — <span class="text-gradient">WE CLEAN IT ALL</span>
+</h1>
+<p class="text-slate-300 text-base sm:text-lg max-w-xl font-normal leading-relaxed">
+              We provide spotless, dependable, and eco-friendly cleaning services that keep upscale homes, offices, and embassies in Kampala and Entebbe sparkling, fresh, and pristine.
+            </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="bg-brandBlue hover:bg-brandBlue-hover text-white font-bold px-7 py-3.5 rounded-full shadow-lg shadow-brandBlue/30 hover:shadow-brandBlue/50 transition duration-200 flex items-center gap-3" href="#contact">
+<span class="">Get Instant Quote</span>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+<a class="bg-white/10 hover:bg-white/20 border border-white/25 text-white font-bold px-6 py-3.5 rounded-full backdrop-blur-sm transition duration-200 flex items-center gap-2" href="tel:0762465788">
+<i class="fa-solid fa-phone-volume text-brandCyan"></i>
+<span class="">Call 0762465788</span>
+</a>
+<a class="bg-emerald-600/90 hover:bg-emerald-500 text-white font-bold px-5 py-3.5 rounded-full transition flex items-center gap-2" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20would%20like%20to%20schedule%20a%20cleaning%20visit" target="_blank">
+<i class="fa-brands fa-whatsapp text-lg"></i>
+<span class="">WhatsApp Maya</span>
+</a>
+</div>
+<!-- Trust Metrics Bar -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/15">
+<div class="flex items-center gap-3">
+<div class="text-2xl text-brandBlue font-extrabold font-serif">25+</div>
+<div class="text-xs text-slate-300 leading-tight">Vetted Expert<br>Crew Members</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-2xl text-brandCyan font-extrabold font-serif">1.2K+</div>
+<div class="text-xs text-slate-300 leading-tight">Properties<br>Sparkled</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-2xl text-brandMint font-extrabold font-serif">100%</div>
+<div class="text-xs text-slate-300 leading-tight">Bond Back<br>Guarantee</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-2xl text-amber-400 font-extrabold font-serif">4.9★</div>
+<div class="text-xs text-slate-300 leading-tight">Top Rating in<br>Kampala</div>
+</div>
+</div>
+</div>
+<!-- Right Hero Showcase Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/20">
+<div class="absolute -top-4 right-6 bg-brandNavy text-white text-xs font-bold uppercase tracking-wider py-1.5 px-4 rounded-full shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-certificate text-amber-400"></i> Certified Cleaners
+              </div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-2xl bg-brandBlue/10 p-2 border border-brandBlue/20 flex items-center justify-center flex-shrink-0">
+<img alt="Ask Maya Logo Mark" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWjLniLIeT4f6Yp4RlUZmgfBTvau5U2U3eR_L6TRfocG1F0_mPkz70uXBIPdXJ0FBtz-a9J25K6zw9kXjZqpbGRltbiQVVUa7oWnVDfWywUXb6xGeDSXCYNZMNmIb2xwNG_9DBIEKkTza9aG6FxFSxkmpWJdEKA45D1EMZFmgqWzD_n6uLESBZpMvaGbtJ9Dke2cjrAyvW4Gz7sLZ-yasVqXsgeO161qvr4zyMlTwBHYxlnOBlk9Xc1fyJLk1fqubpvA">
+</div>
+<div>
+<h3 class="font-bold text-lg text-brandNavy leading-snug">Maya Quality Assurance</h3>
+<p class="text-xs text-brandMuted">Kampala &amp; Entebbe Dedicated Teams</p>
+<div class="flex items-center text-amber-400 text-xs mt-1">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<span class="text-slate-500 font-semibold ml-2">(380+ Verified Reviews)</span>
+</div>
+</div>
+</div>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-circle-check text-brandBlue text-lg mt-0.5"></i>
+<div>
+<strong class="text-brandNavy">Eco &amp; Infant Safe Chemistry:</strong>
+<p class="text-xs text-slate-600">Zero harsh pungent fumes. Safe for children, elders, and pets.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-shield-halved text-brandCyan text-lg mt-0.5"></i>
+<div>
+<strong class="text-brandNavy">Insured &amp; Police Cleared:</strong>
+<p class="text-xs text-slate-600">Trustworthy staff with full background verification for your peace of mind.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-clock-rotate-left text-emerald-500 text-lg mt-0.5"></i>
+<div>
+<strong class="text-brandNavy">Same-Day Urgent Dispatch:</strong>
+<p class="text-xs text-slate-600">Need immediate move-in or event turnaround? We arrive prepared.</p>
+</div>
+</div>
+</div>
+<div class="bg-brandNavy rounded-2xl p-4 text-white flex items-center justify-between">
+<div>
+<p class="text-[11px] uppercase tracking-wider text-brandBlue-light">Talk To Operations</p>
+<a class="text-lg font-bold hover:text-brandBlue transition" href="tel:0762465788">0762465788</a>
+</div>
+<a class="w-10 h-10 rounded-full bg-brandBlue text-white flex items-center justify-center hover:bg-white hover:text-brandNavy transition" href="tel:0762465788">
+<i class="fa-solid fa-phone"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-20 bg-white relative overflow-hidden" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 relative">
+<div class="bg-gradient-to-tr from-brandNavy to-brandBlue p-1.5 rounded-3xl shadow-xl max-w-lg mx-auto">
+<div class="bg-slate-50 rounded-[22px] p-6 sm:p-8 space-y-6">
+<div class="flex justify-between items-center border-b pb-4">
+<div>
+<span class="text-xs font-bold uppercase tracking-wider text-brandBlue">Our Mission</span>
+<h3 class="text-xl font-bold text-brandNavy font-serif">Immaculate Spaces, Zero Stress</h3>
+</div>
+<div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-brandBlue text-xl">
+<i class="fa-solid fa-spray-can-sparkles"></i>
+</div>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed">
+                  Founded with a vision to revolutionize hygiene standards across Uganda, AskMaya combines commercial steam power, non-toxic hospital-grade sanitizers, and rigorous European hospitality benchmarks.
+                </p>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-xl bg-white shadow-sm border border-slate-100">
+<div class="text-2xl font-bold text-brandNavy font-serif">100%</div>
+<div class="text-xs text-slate-500 font-medium mt-1">Satisfaction Guarantee</div>
+</div>
+<div class="p-4 rounded-xl bg-white shadow-sm border border-slate-100">
+<div class="text-2xl font-bold text-brandBlue font-serif">7 Days</div>
+<div class="text-xs text-slate-500 font-medium mt-1">Flexible Scheduling</div>
+</div>
+</div>
+<div class="flex items-center gap-3 pt-2">
+<img alt="AskMaya Emblem" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQletyy77Sl8IYfcZ8f_h-cCsWcAujtEtvqA9nD_rfU_6twSyFYi4c7H4ngnHoo64sYBLTrFTZ0IG30Q86HreKE7LUioF_L_QaXfJo4PjAXi4aT4KsIbyyA5zH7DaQc3LefNctRExja3ONeHm0e_SgKM-91U6TuDz96Io2x0z-ZUgnnqV_c9-jZI4dbMcdBksM3jKERCeYpSMaH4FSvkN_GPcFjEpqsVZAkphk6AXjmhaYjglGgPSwQBWi0hRFPr-xSg">
+<div>
+<h5 class="text-xs font-bold text-brandNavy uppercase tracking-wider">AskMaya Certified</h5>
+<p class="text-[11px] text-slate-500">Kololo • Nakasero • Muyenga • Ntinda • Entebbe</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brandBlue">
+<span class="">• About AskMaya Services</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-brandNavy font-serif leading-tight">
+              Professional Home &amp; Corporate Cleaning For Every Space
+            </h2>
+<p class="text-slate-600 text-base leading-relaxed">
+              We take pride in delivering certified, high-grade cleaning services focused on excellence, safety, and consistent results you can trust. From cozy apartments in Muyenga to diplomatic compounds in Nakasero, our signature attention to detail ensures zero dust, allergen reduction, and a refreshing sanctuary.
+            </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-brandBlue/10 flex items-center justify-center text-brandBlue flex-shrink-0 mt-1">
+<i class="fa-solid fa-broom"></i>
+</div>
+<div>
+<h4 class="text-base font-bold text-brandNavy">Commercial &amp; Office Cleaning</h4>
+<p class="text-sm text-slate-600">Discreet after-hours cleaning, boardrooms, workstation sanitization, and lobby floor buffing.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-brandBlue/10 flex items-center justify-center text-brandBlue flex-shrink-0 mt-1">
+<i class="fa-solid fa-couch"></i>
+</div>
+<div>
+<h4 class="text-base font-bold text-brandNavy">Deep Steam &amp; Fabric Restoration</h4>
+<p class="text-sm text-slate-600">Deep steam extraction for plush sofas, dining chairs, mattresses, and wool carpets that eliminates grime and dust mites.</p>
+</div>
+</div>
+</div>
+<div class="pt-4 flex items-center gap-6">
+<a class="bg-brandNavy hover:bg-brandBlue text-white font-bold px-7 py-3 rounded-full transition duration-200" href="#services">
+                Explore Services
+              </a>
+<a class="flex items-center gap-2 text-brandNavy font-bold text-sm hover:text-brandBlue" href="tel:0762465788">
+<i class="fa-solid fa-phone text-brandBlue"></i>
+<span class="">Call Maya: 0762465788</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: ServicesPillarsSection -->
+<section class="py-20 bg-slate-50 border-y border-slate-200" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+<span class="text-xs font-bold uppercase tracking-widest text-brandBlue">• Our Core Cleaning Pillars</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-brandNavy font-serif">
+            Quality Cleaning Services You Can Trust
+          </h2>
+<p class="text-slate-600 text-sm sm:text-base">
+            Our professional cleaners are equipped with commercial grade extractors, odorless fumigants, and organic cleaners tailored for residential and corporate spaces in Uganda.
+          </p>
+</div>
+<div class="grid md:grid-cols-3 gap-8"><!-- Pillar 1: Domestic Deep Cleaning -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group">
+  <div>
+    <div class="relative h-48 overflow-hidden bg-slate-100">
+      <img src="https://images.pexels.com/photos/4008518/pexels-photo-4008518.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Professional domestic cleaner wiping a surface during a home deep clean" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+      <span class="absolute top-3 left-3 bg-brandNavy/90 backdrop-blur-md text-cyan-300 text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-white/20 tracking-wider shadow-sm">
+        Pillar 01 • Residential &amp; Villa
+      </span>
+    </div>
+    <div class="p-6 sm:p-7">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center text-lg flex-shrink-0">
+          <i class="fa-solid fa-house-chimney-window"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-brandNavy leading-tight">Domestic Deep Cleaning</h3>
+          <span class="text-[11px] text-slate-400 font-semibold">Comprehensive Home Sanctuary</span>
+        </div>
+      </div>
+      <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+        Full residential deep cleans, recurring housekeeping, move-in turnover, and meticulous kitchen &amp; bathroom sterilization.
+      </p>
+      <ul class="space-y-2 text-xs text-slate-600">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Full-kitchen degreasing &amp; oven scrub</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Limescale bathroom descaling</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Window panes &amp; tracks</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Dusting baseboards &amp; light fixtures</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Outdoor compound sweeping &amp; sanitization</li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-6 sm:p-7 pt-4 border-t border-slate-100 flex items-center justify-between">
+   <div>
+    <span class="text-sm font-bold text-slate-500">Custom Quote</span>
+    </div>
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Domestic%20Deep%20Cleaning" target="_blank" aria-label="Book Domestic Deep Cleaning">
+      <i class="fa-solid fa-arrow-right text-xs"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Pillar 2: Post-Construction Cleaning -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group">
+  <div>
+    <div class="relative h-48 overflow-hidden bg-slate-100">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Bp_WNoDkreD82hQ6bJYjNXEuVfbDcVNYOEPUnc6DfKa4dEeUcCA2TnwMACIngb_UXZvOH39x4i0QqEmk1-rexJr6GZWyHvVlBniBxSU2zaPPPQBiFHo7rMfU6Fmstp7lHvW5kKJrvZbbkMSY-4vR3_OzUb3tlzMD1a_Pumj7ZdzdZJwM9Goxt7YvyMRmDmpfi08otBqy3fpKHMElT2NgUj9GiFJiDlPFTxti7GjvunoRVuqcvVEL" alt="Post-construction deep cleaning service" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+      <span class="absolute top-3 left-3 bg-brandNavy/90 backdrop-blur-md text-cyan-300 text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-white/20 tracking-wider shadow-sm">
+        Pillar 02 • Site Handover &amp; Move-In
+      </span>
+    </div>
+    <div class="p-6 sm:p-7">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-400/15 text-amber-500 flex items-center justify-center text-lg flex-shrink-0">
+          <i class="fa-solid fa-broom"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-brandNavy leading-tight">Post-Construction Clean</h3>
+          <span class="text-[11px] text-slate-400 font-semibold">Renovation &amp; Architectural Handover</span>
+        </div>
+      </div>
+      <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+        Industrial-grade post-build revitalization eliminating fine gypsum dust, paint splatters, and cement haze with rotary scrubbers.
+      </p>
+      <ul class="space-y-2 text-xs text-slate-600">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Paint splatter &amp; cement haze removal</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Fine drywall &amp; gypsum dust extraction</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Industrial floor scrubbing &amp; polishing</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Sticker &amp; silicone removal from all glass</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Move-in ready handover audit</li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-6 sm:p-7 pt-4 border-t border-slate-100 flex items-center justify-between">
+    <div>
+      <span class="text-sm font-bold text-slate-500">Custom Quote</span>
+    </div>
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Post-Construction%20Cleaning" target="_blank" aria-label="Book Post-Construction Cleaning">
+      <i class="fa-solid fa-arrow-right text-xs"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Pillar 3: Upholstery & Steam Extraction (Highlighted / Most Popular) -->
+<div class="bg-brandNavy text-white rounded-3xl overflow-hidden shadow-xl border border-white/20 transition-all duration-300 flex flex-col justify-between group relative">
+  <div class="absolute top-3 right-3 z-10 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">
+    Most Popular
+  </div>
+  <div>
+    <div class="relative h-48 overflow-hidden bg-slate-900">
+      <img src="https://images.pexels.com/photos/4401538/pexels-photo-4401538.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Upholstery steam extraction tool cleaning a sofa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-brandNavy via-brandNavy/40 to-transparent"></div>
+      <span class="absolute top-3 left-3 bg-brandNavy/90 backdrop-blur-md text-brandCyan text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-white/20 tracking-wider shadow-sm">
+        Pillar 03 • 180°C Kärcher Steam
+      </span>
+    </div>
+    <div class="p-6 sm:p-7">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-white/10 text-brandCyan flex items-center justify-center text-lg flex-shrink-0">
+          <i class="fa-solid fa-couch"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white leading-tight">Upholstery &amp; Steam Extraction</h3>
+          <span class="text-[11px] text-brandCyan font-semibold">Deep Hygiene Extraction</span>
+        </div>
+      </div>
+      <p class="text-slate-300 text-xs sm:text-sm mb-4 leading-relaxed">
+        High-temperature steam deep washing for delicate velvet sofas, wool area rugs, dining chairs, and allergen-free mattresses.
+      </p>
+      <ul class="space-y-2 text-xs text-slate-300">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandCyan text-[11px]"></i> High-temp 180°C industrial steam extraction for sofas</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandCyan text-[11px]"></i> Dining chair stain lifting &amp; color restoration</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandCyan text-[11px]"></i> Plush mattress allergen &amp; bedbug sanitization</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandCyan text-[11px]"></i> Luxury rug &amp; carpet deep shampooing</li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-6 sm:p-7 pt-4 border-t border-white/15 flex items-center justify-between">
+    <div>
+      <span class="text-sm font-bold text-slate-300">Custom Quote</span>
+    </div>
+    <a class="w-10 h-10 rounded-full bg-brandBlue text-white flex items-center justify-center hover:bg-white hover:text-brandNavy transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Upholstery%20and%20Steam%20Extraction" target="_blank" aria-label="Book Upholstery and Steam Extraction">
+      <i class="fa-solid fa-arrow-right text-xs"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Pillar 4: Mobile Car Detailing -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group">
+  <div>
+    <div class="relative h-48 overflow-hidden bg-slate-100">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx574K1h4ftLxy2abW1yGB-EKbz-DbGPdM1qPVAheFvbSftmzcSincboEbz9Ovtb-5MSZVUglMkagUUaTWnAF_rHpYGu_fmsC3cVaLTTq6Zh1VSIMwxG2m6_4k8b50RyVheRfAcIFC-cOouP30NOM1-JLEn54uuhGMHuvVkSx9quqjkeNH9jhVKnWnf2CZyN_dwsnOriv_vb3X_hJ27xXtvdJ83O2t7_gqgAOdO4zPcezOnJ8IhAkq" alt="Professional car detailing specialist deep cleaning SUV interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+      <span class="absolute top-3 left-3 bg-brandNavy/90 backdrop-blur-md text-cyan-300 text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-white/20 tracking-wider shadow-sm">
+        Pillar 04 • Fleet &amp; Luxury Automotive
+      </span>
+    </div>
+    <div class="p-6 sm:p-7">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center text-lg flex-shrink-0">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-brandNavy leading-tight">Mobile Car Detailing</h3>
+          <span class="text-[11px] text-slate-400 font-semibold">Doorstep Interior &amp; Exterior Valet</span>
+        </div>
+      </div>
+      <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+        Executive mobile detailing unit with hot water leather steam extraction, AC duct sanitization, and mirror finish wax.
+      </p>
+      <ul class="space-y-2 text-xs text-slate-600">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Comprehensive leather conditioning &amp; fabric steam wash</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Dashboard &amp; vent antimicrobial steam cleaning</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Trunk &amp; floor mat shampooing</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Exterior foam bath &amp; water-bead wax finish</li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-6 sm:p-7 pt-4 border-t border-slate-100 flex items-center justify-between">
+    <div>
+      <span class="text-sm font-bold text-slate-500">Custom Quote</span>
+    </div>
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Mobile%20Car%20Detailing" target="_blank" aria-label="Book Mobile Car Detailing">
+      <i class="fa-solid fa-arrow-right text-xs"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Pillar 5: Event & Venue Turnaround -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group">
+  <div>
+    <div class="relative h-48 overflow-hidden bg-slate-100">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyvJjANLK3RIJ8aqOXyVE6UQDt0n6MjZOcZFRQETZQzt40fLHRDRnS5YaVhMGEztUI4or-zWmA3lXqvAn7Bpt3RW2Z_WGm-LA7X1EjLdwnh4_AO5mDyNVllJ6MuE55iDp58k-XdOJRr5oUBx7mKQSGKv4hjASeVzm9Y1PWz9LJy4j8rRnBUMTnkdwDU4iUoCnM5lKmauHOaJ6UFae2NGwefvWHfYiW1jALHPwp_UohBJ5Zl-RMrOQk" alt="After-event cleaning and banquet hall turnaround team" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+      <span class="absolute top-3 left-3 bg-brandNavy/90 backdrop-blur-md text-cyan-300 text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-white/20 tracking-wider shadow-sm">
+        Pillar 05 • Pre &amp; Post-Event Rapid
+      </span>
+    </div>
+    <div class="p-6 sm:p-7">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-lg flex-shrink-0">
+          <i class="fa-solid fa-spray-can-sparkles"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-brandNavy leading-tight">Event &amp; Venue Turnaround</h3>
+          <span class="text-[11px] text-slate-400 font-semibold">Overnight Banquet &amp; Gala Reset</span>
+        </div>
+      </div>
+      <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+        High-capacity event crew for diplomatic gatherings, weddings, and corporate banquets. Rapid overnight floor buffing and trash clearance.
+      </p>
+      <ul class="space-y-2 text-xs text-slate-600">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Pre-event setup sanitization &amp; guest area staging</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Continuous on-site trash &amp; restroom maintenance</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Rapid overnight banquet hall restoration</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandBlue text-[11px]"></i> Heavy floor buffing &amp; waste disposal</li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-6 sm:p-7 pt-4 border-t border-slate-100 flex items-center justify-between">
+    <div>
+      <span class="text-sm font-bold text-slate-500">Custom Quote</span>
+    </div>
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Event%20and%20Venue%20Turnaround" target="_blank" aria-label="Book Event and Venue Turnaround">
+      <i class="fa-solid fa-arrow-right text-xs"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Pillar 6: Fumigation & Pest Shield -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group">
+  <div>
+    <div class="relative h-48 overflow-hidden bg-slate-100">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT2YQ9aQRV43uYE6ga_z851HNcaz96wpMpvqYXcefGEAUk-PVpJeOLBZaolf8SrzJTAmX3w_vTpNhndQ3OU8hD2iCAigq_Ww7WHbtKlg_siYxF4pEY6A6jwX73oQg7q-b4xSiuH1aAGWm7vyueTb_BixZiI8mtCs27FhgUdfZkDQR7xPP--bNNzj_euDUKLSKOEqVSw8frG9V6COG-HlQxsU0ESf-bQiga8K5A9y4FqV5pcRRqL8Pm" alt="Eco-friendly pest control technician misting home corner" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+      <span class="absolute top-3 left-3 bg-brandNavy/90 backdrop-blur-md text-emerald-400 text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-white/20 tracking-wider shadow-sm">
+        Pillar 06 • Safe &amp; Odorless Defense
+      </span>
+    </div>
+    <div class="p-6 sm:p-7">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg flex-shrink-0">
+          <i class="fa-solid fa-shield-virus"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-brandNavy leading-tight">Fumigation &amp; Pest Shield</h3>
+          <span class="text-[11px] text-slate-400 font-semibold">Zero Odor Infant-Safe Treatment</span>
+        </div>
+      </div>
+      <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+        Targeted micro-mist and gel bait extermination for cockroaches, bedbugs, termites, and rodents. Non-toxic, food-safe, and odor-free.
+      </p>
+      <ul class="space-y-2 text-xs text-slate-600">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600 text-[11px]"></i> Hospital-grade odorless &amp; child/pet-safe misting</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600 text-[11px]"></i> Targeted cockroach gel baits &amp; bedbug eradication</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600 text-[11px]"></i> Termite treatment &amp; mosquito perimeter spray</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600 text-[11px]"></i> 6-month written protection warranty</li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-6 sm:p-7 pt-4 border-t border-slate-100 flex items-center justify-between">
+    <div>
+      <span class="text-sm font-bold text-slate-500">Custom Quote</span>
+    </div>
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-emerald-600 transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Fumigation%20and%20Pest%20Shield" target="_blank" aria-label="Book Fumigation and Pest Shield">
+      <i class="fa-solid fa-arrow-right text-xs"></i>
+    </a>
+  </div>
+</div></div>
+</div>
+</section>
+<!-- END: ServicesPillarsSection -->
+<!-- BEGIN: TeamSection -->
+<section class="py-20 bg-[#f6fafe] border-t border-slate-200" id="team">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Header -->
+<div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+<span class="text-xs font-bold uppercase tracking-widest text-brandBlue flex items-center justify-center gap-1.5">
+<i class="fa-solid fa-certificate text-amber-400"></i> Our Dedicated Team &amp; Crew
+    </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-brandNavy font-serif">
+      Quality Cleaning Professionals
+    </h2>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+      Every AskMaya specialist is thoroughly background-checked, police-cleared, and certified in hospital-grade sanitation techniques across Kampala and Entebbe.
+    </p>
+</div>
+<!-- 1. Founder & CEO Showcase Card (Tall portrait container showing at least 80% of full photo) -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 transition-all duration-300 hover:shadow-2xl mb-10">
+<div class="grid lg:grid-cols-12 gap-0 items-stretch">
+<div class="lg:col-span-5 relative bg-gradient-to-b from-[#09183a] to-[#040e29] min-h-[480px] sm:min-h-[520px] overflow-hidden group flex items-center justify-center p-3 sm:p-4">
+<img alt="Nalikka Sumaya Abubaker - Founder &amp; CEO, AskMaya Cleaning Services" class="w-full h-full max-h-[540px] object-contain object-center transition-transform duration-300 group-hover:scale-105 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXvQVe0oozYNz2DVJNWXRnmepFtKF0D35PEOa8caznAhmTa7KAqZT9MyCqtLTqa4-51EdzklgoIU6WHDGlJO0MVnNs0PEOwMqxXtH6VDwtT6WoGaxPObgYOzBWDuz22wgbOMFegw5x8Y0HHuUB62sZH6TBbzO-1oYXLHBOf4oTvrm8o8VxlItyN5nOcLVw8u38hhRfJnHfqurNlMnBYvj-RpbCt-JM4RfLLhnDheWIGJJrdlPageSmvDDCYAJuQPb4Sw">
+<div class="absolute inset-0 bg-gradient-to-t from-brandNavy/95 via-transparent to-black/20 pointer-events-none"></div>
+<div class="absolute top-4 left-4 flex flex-wrap gap-2">
+<span class="bg-brandNavy/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-3.5 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-certificate text-amber-400"></i> Founder &amp; CEO
+</span>
+<span class="bg-brandBlue/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-crown text-amber-300"></i> Executive Visionary
+</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-white text-xs bg-brandNavy-dark/85 backdrop-blur-md p-3 rounded-xl border border-white/10 flex items-center justify-between">
+<span class="font-semibold flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandCyan"></i> Kampala &amp; Entebbe</span>
+<span class="text-amber-400 font-bold flex items-center gap-1"><i class="fa-solid fa-star"></i> 5.0 Commended</span>
+</div>
+</div>
+<div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50">
+<div class="space-y-4">
+<div>
+<div class="flex items-center justify-between gap-2">
+<span class="text-xs font-bold uppercase tracking-widest text-brandBlue flex items-center gap-1.5"><i class="fa-solid fa-sparkles text-brandCyan"></i> Executive Leadership &amp; Vision</span>
+<div class="flex items-center text-amber-400 text-xs">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<span class="text-slate-400 text-[10px] font-bold ml-1.5">(Client Commended)</span>
+</div>
+</div>
+<h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-brandNavy mt-2 leading-tight">Nalikka Sumaya Abubaker</h3>
+<p class="text-sm font-bold text-brandBlue mt-1">Founder &amp; Chief Executive Officer</p>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">
+Leading AskMaya with an uncompromising vision to redefine Uganda’s living and commercial sanitation benchmarks. Under Sumaya's direct guidance, AskMaya equips skilled local professionals with European Kärcher technology, non-toxic hospital-grade sanitization formulas, and an unwavering commitment to five-star client happiness across luxury residences, corporate towers, and diplomatic compounds.
+</p>
+<div class="grid sm:grid-cols-2 gap-3 pt-2">
+<div class="flex items-start gap-3 p-3 rounded-2xl bg-white border border-slate-100 shadow-sm">
+<div class="w-8 h-8 rounded-xl bg-brandBlue/10 text-brandBlue flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-award text-xs text-brandBlue"></i></div>
+<div>
+<h4 class="text-xs font-bold text-brandNavy">Uncompromising Quality</h4>
+<p class="text-[11px] text-slate-500 leading-snug">Personal oversight on European protocol execution and client delight.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-2xl bg-white border border-slate-100 shadow-sm">
+<div class="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-circle-check text-xs text-emerald-600"></i></div>
+<div>
+<h4 class="text-xs font-bold text-brandNavy">Executive Commitment</h4>
+<p class="text-[11px] text-slate-500 leading-snug">Guaranteed reliability, rapid response, and dedicated VIP support.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-slate-200 mt-6 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-xs font-bold text-brandNavy">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Available for Corporate &amp; VIP Consultations
+</div>
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 text-xs font-bold text-white bg-brandNavy hover:bg-brandBlue px-5 py-2.5 rounded-full transition shadow-md" href="tel:0762465788">
+<i class="fa-solid fa-phone text-xs"></i> Speak with CEO
+</a>
+<a class="inline-flex items-center gap-2 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 px-5 py-2.5 rounded-full transition shadow-md" href="https://wa.me/256762465788?text=Hello%20Nalikka%20Sumaya%2C%20I%20would%20like%20to%20inquire%20about%20AskMaya%20executive%20cleaning%20services" target="_blank">
+<i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp CEO
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2, 3, 4. Key Leadership & Operational Managers Grid (Generous 450px+ tall cards showing >=80% of figures) -->
+<div class="grid md:grid-cols-3 gap-8 items-stretch mb-10">
+<!-- Card 1: Kemigisha Donah - Chief Financial Officer & Client Accounts Lead -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 flex flex-col justify-between group transition-all duration-300 hover:shadow-2xl">
+<div class="relative bg-gradient-to-b from-[#0a2050] to-[#040e29] h-[450px] overflow-hidden flex items-center justify-center p-3">
+<img alt="Kemigisha Donah - Chief Financial Officer &amp; Client Accounts Lead" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105 drop-shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiRC0la9cg5kBGfQA6IShO8YKhLOSwCPs9HOfNbOR0xWQ-QvxL1Mw56dy_NtzFocJ4iPta0JKdUV4cQFF0VzuTO0AF-Jz2dux00ZUBWhrq4dWBKK26-RhQtGAZD9EF9f05LccpKWJQPwwXmlefpfudV7cvqEV7om_yWRIOZXYJDrzv40IV7foTwECSi-7wj9BIQXgfY2zIobBjsSjx5TIY29diNZWCWkHJOc1anOctmlq_ciQhGLSalzIDvj9PKaZ4dg">
+<div class="absolute inset-0 bg-gradient-to-t from-brandNavy/95 via-transparent to-black/20 pointer-events-none"></div>
+<div class="absolute top-4 left-4 flex flex-wrap gap-2">
+<span class="bg-brandNavy/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-coins text-amber-400"></i> Finance &amp; Accounts
+</span>
+<span class="bg-brandBlue/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-phone text-white"></i> Client Liaison
+</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-white text-xs bg-brandNavy-dark/85 backdrop-blur-md p-3 rounded-xl border border-white/10 flex items-center justify-between">
+<span class="font-semibold flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-brandCyan"></i> Executive Desk</span>
+<span class="text-amber-400 font-bold flex items-center gap-1"><i class="fa-solid fa-star"></i> 5.0 Rated</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50 space-y-4">
+<div>
+<div class="flex items-center justify-between gap-2">
+<span class="text-[11px] font-bold uppercase tracking-wider text-brandBlue">Finance &amp; Client Service</span>
+<div class="flex items-center text-amber-400 text-xs">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<span class="text-slate-400 text-[10px] font-bold ml-1">(Accounts Lead)</span>
+</div>
+</div>
+<h3 class="text-xl font-bold font-serif text-brandNavy mt-1">Kemigisha Donah</h3>
+<p class="text-xs font-semibold text-brandBlue mt-0.5">Chief Financial Officer &amp; Client Accounts Lead</p>
+<p class="text-slate-600 text-xs leading-relaxed mt-2.5">
+In charge of payroll and payments, financial operations, corporate retainer contracts, and handling primary client inquiries with seamless booking coordination.
+</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 text-[11px] font-bold text-brandNavy">
+<i class="fa-solid fa-building-columns text-brandBlue"></i> Accounts Manager
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-brandNavy hover:bg-brandBlue px-4 py-2 rounded-full transition shadow-sm" href="tel:0762465788">
+<i class="fa-solid fa-phone text-[10px]"></i> Contact Accounts
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2: Wambewo Marvin - Store Manager -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 flex flex-col justify-between group transition-all duration-300 hover:shadow-2xl">
+<div class="relative bg-gradient-to-b from-[#0a2050] to-[#040e29] h-[450px] overflow-hidden flex items-center justify-center p-3">
+<img alt="Wambewo Marvin - Store Manager" class="w-full h-full object-contain object-center transition-transform duration-300 group-hover:scale-105 drop-shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEfmcQkaM6HIk4Qdykx_to0c3O-4zrer2o6BMjQmzGhksohTvDxQ-bdBsRmyOHIW7OtExZjMWQUl9CVYIe0jbhKaVEej3Gk52cbHapc2I6Z1dzzDFip2Eaoq7k0KHat0R8gNAyBemkBcj7YrZHsgORK8YDspwcnmfBxotxppyO0aD2efTi1RWY0-rc0ZGwW5BUoORQ5vso2Vs_WtcGstjghPtgAYK6IW_pntYEHXzQDlZAkm3hak6OPHXrY7dehEidJg">
+<div class="absolute inset-0 bg-gradient-to-t from-brandNavy/95 via-transparent to-black/20 pointer-events-none"></div>
+<div class="absolute top-4 left-4 flex flex-wrap gap-2">
+<span class="bg-brandNavy/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-warehouse text-amber-400"></i> Store Manager
+</span>
+<span class="bg-amber-500/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-spray-can-sparkles text-white"></i> Kärcher Fleet
+</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-white text-xs bg-brandNavy-dark/85 backdrop-blur-md p-3 rounded-xl border border-white/10 flex items-center justify-between">
+<span class="font-semibold flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandCyan"></i> Equipment Depot</span>
+<span class="text-amber-400 font-bold flex items-center gap-1"><i class="fa-solid fa-star"></i> 5.0 Rated</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50 space-y-4">
+<div>
+<div class="flex items-center justify-between gap-2">
+<span class="text-[11px] font-bold uppercase tracking-wider text-brandBlue">Logistics &amp; Inventory</span>
+<div class="flex items-center text-amber-400 text-xs">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<span class="text-slate-400 text-[10px] font-bold ml-1">(Machinery Lead)</span>
+</div>
+</div>
+<h3 class="text-xl font-bold font-serif text-brandNavy mt-1">Wambewo Marvin</h3>
+<p class="text-xs font-semibold text-brandBlue mt-0.5">Store Manager</p>
+<p class="text-slate-600 text-xs leading-relaxed mt-2.5">
+Oversees cleaning equipment inventory, Kärcher industrial extractors &amp; vacuums, eco-friendly detergents, chemical stock, and site dispatch supply lines.
+</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 text-[11px] font-bold text-brandNavy">
+<i class="fa-solid fa-certificate text-brandBlue"></i> Kärcher Certified
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-brandNavy hover:bg-brandBlue px-4 py-2 rounded-full transition shadow-sm" href="tel:0762465788">
+<i class="fa-solid fa-phone text-[10px]"></i> Supply Desk
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3: Mukasa Edrine - Operations Manager -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 flex flex-col justify-between group transition-all duration-300 hover:shadow-2xl">
+<div class="relative bg-gradient-to-b from-[#0a2050] to-[#040e29] h-[450px] overflow-hidden flex items-center justify-center p-3">
+<img alt="Mukasa Edrine - Operations Manager" class="w-full h-full object-contain object-center transition-transform duration-300 group-hover:scale-105 drop-shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2BCg3JDKGVCpsSd1tdbXIhSrBOY_XcC2wZjxxKfbf0o4sK4iY92dTOlBpvIqtsY3HV_DAOEM5FTE18EPyiC_2ioT5YdkXuW4SBvaokRG0eqZE1j5Ah3Rb8t2A9eT88OhDR8xiWb_WHoGSxUvlEL4DO2XWTo5lDYeYHQ7ypwTd8ufegCEJyRCTQ7fdDZpGi8u_ohopzGWw_eFQBUc1Myl--mNHPSY3UGpHeAhtGzxU6f7-Uw7nvB4NSmgSjIgSPZVfng">
+<div class="absolute inset-0 bg-gradient-to-t from-brandNavy/95 via-transparent to-black/20 pointer-events-none"></div>
+<div class="absolute top-4 left-4 flex flex-wrap gap-2">
+<span class="bg-brandNavy/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-shield-halved text-brandCyan"></i> Operations &amp; Logistics
+</span>
+<span class="bg-brandBlue/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">
+<i class="fa-solid fa-wand-magic-sparkles text-white"></i> Field QA Lead
+</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-white text-xs bg-brandNavy-dark/85 backdrop-blur-md p-3 rounded-xl border border-white/10 flex items-center justify-between">
+<span class="font-semibold flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandCyan"></i> Kampala &amp; Entebbe</span>
+<span class="text-amber-400 font-bold flex items-center gap-1"><i class="fa-solid fa-star"></i> 5.0 Rated</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50 space-y-4">
+<div>
+<div class="flex items-center justify-between gap-2">
+<span class="text-[11px] font-bold uppercase tracking-wider text-brandBlue">Field Operations</span>
+<div class="flex items-center text-amber-400 text-xs">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<span class="text-slate-400 text-[10px] font-bold ml-1">(Field Lead)</span>
+</div>
+</div>
+<h3 class="text-xl font-bold font-serif text-brandNavy mt-1">Mukasa Edrine</h3>
+<p class="text-xs font-semibold text-brandBlue mt-0.5">Operations Manager</p>
+<p class="text-slate-600 text-xs leading-relaxed mt-2.5">
+Field operations coordination, on-site team deployment, equipment logistics, and hospital-grade sanitation quality assurance across Kampala &amp; Entebbe.
+</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 text-[11px] font-bold text-brandNavy">
+<i class="fa-solid fa-certificate text-brandBlue"></i> Certified Operations
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-brandNavy hover:bg-brandBlue px-4 py-2 rounded-full transition shadow-sm" href="tel:0762465788">
+<i class="fa-solid fa-phone text-[10px]"></i> Contact Manager
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Field Recognition & Award Showcase: Trevor Donald & Field Crew (Full Photo Display) -->
+
+</div>
+</section>
+<!-- END: TeamSection -->
+<!-- BEGIN: MasterclassSection -->
+<section class="py-20 bg-white border-t border-slate-200 relative overflow-hidden" id="masterclass">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandNavy/5 border border-brandNavy/10 text-xs font-bold uppercase tracking-widest text-primary">
+<i class="fa-solid fa-certificate text-amber-400"></i><span class="">Official Certification &amp; Masterclass</span><span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-brandNavy font-serif leading-tight">Certified by Industry Leaders: The AskMaya Masterclass</h2>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Our team undergoes continuous advanced technical training in partnership with global hygiene and equipment leaders like Kärcher and Stanbic Bank. We invest in certified techniques, modern machinery, and rigorous safety standards to guarantee five-star quality across every home, embassy, and corporate headquarters.</p>
+</div>
+<div class="mb-14 rounded-3xl overflow-hidden shadow-2xl border border-slate-200/90 relative group bg-brandNavy">
+<div class="relative overflow-hidden">
+<img alt="AskMaya Cleaning Services team at official masterclass conference with Kärcher equipment and partner backdrops" class="w-full h-auto max-h-[620px] object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHCNZghKMb8ZdBHY9Ct5Ox__8RqpYN4rLOIyhAmHv92r9HWV-JoXbZSIAOjh40_PrrJxmjESTDeOtV3NE74DOamDOUQt-oaznaeKBdBajysrBGtp7HYhR5nKZJySQbeXeDzTJ75f7xpGNAkkk7RMmqTZUD74rxtpH228BvxV5vgH3VX7Q2KMoGb5-PRGWDkRVZm4IcxGmSa91D4BNz-3Qb5tz3mGvGNtw-6GCFtxHaHqWsX0_DmN5YkQjB_0MDlZ-Gtg">
+<div class="absolute inset-0 bg-gradient-to-t from-brandNavy/95 via-brandNavy/30 to-transparent pointer-events-none"></div>
+<div class="absolute top-4 left-4 flex flex-wrap gap-2">
+<span class="bg-brandNavy/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider py-1.5 px-3.5 rounded-full border border-white/20 shadow-md flex items-center gap-1.5"><i class="fa-solid fa-award text-amber-400"></i> Official Launch &amp; Training Summit</span>
+<span class="bg-primary-container/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider py-1.5 px-3.5 rounded-full border border-white/20 shadow-md flex items-center gap-1.5"><i class="fa-solid fa-shield-virus text-brandCyan"></i> Certified Operations</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-brandNavy-dark/85 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/15 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold uppercase tracking-wider text-brandCyan flex items-center gap-1"><i class="fa-solid fa-sparkles"></i> askmaya hygiene masterclass</span>
+<span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-500/30 uppercase">Verified Excellence</span>
+</div>
+<p class="text-sm font-semibold text-white">AskMaya executive leadership, technicians, and specialized crew with flagship Kärcher extraction fleet</p>
+</div>
+<div class="flex items-center gap-2 text-xs font-bold text-slate-300">
+<i class="fa-solid fa-location-dot text-brandCyan"></i><span class="">Kampala &amp; Entebbe Official Deployment</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-14">
+<div class="text-center mb-6">
+<span class="text-xs font-bold uppercase tracking-widest text-slate-500">Institutional Partners &amp; Technology Collaborators</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 items-center">
+<div class="bg-slate-50 hover:bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col items-center justify-center text-center gap-1.5 transition">
+<div class="w-9 h-9 rounded-xl bg-amber-400/15 text-amber-500 flex items-center justify-center text-sm"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+<span class="text-xs font-bold text-brandNavy leading-tight">Kärcher Professional</span>
+<span class="text-[10px] text-slate-500">Cleaning Technology</span>
+</div>
+<div class="bg-slate-50 hover:bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col items-center justify-center text-center gap-1.5 transition">
+<div class="w-9 h-9 rounded-xl bg-blue-100 text-brandBlue flex items-center justify-center text-sm"><i class="fa-solid fa-building-columns"></i></div>
+<span class="text-xs font-bold text-brandNavy leading-tight">Stanbic Bank</span>
+<span class="text-[10px] text-slate-500">Financial Partner</span>
+</div>
+<div class="bg-slate-50 hover:bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col items-center justify-center text-center gap-1.5 transition">
+<div class="w-9 h-9 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-sm"><i class="fa-solid fa-bolt"></i></div>
+<span class="text-xs font-bold text-brandNavy leading-tight">Power Products Uganda</span>
+<span class="text-[10px] text-slate-500">Equipment Supply</span>
+</div>
+<div class="bg-slate-50 hover:bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col items-center justify-center text-center gap-1.5 transition">
+<div class="w-9 h-9 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-sm"><i class="fa-solid fa-globe"></i></div>
+<span class="text-xs font-bold text-brandNavy leading-tight">HSF International</span>
+<span class="text-[10px] text-slate-500">Global Standards</span>
+</div>
+<div class="col-span-2 sm:col-span-1 bg-slate-50 hover:bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col items-center justify-center text-center gap-1.5 transition">
+<div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-sm"><i class="fa-solid fa-house-chimney-window"></i></div>
+<span class="text-xs font-bold text-brandNavy leading-tight">Identity Designs</span>
+<span class="text-[10px] text-slate-500">True Design For Living</span>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-gradient-to-b from-white to-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="w-12 h-12 rounded-2xl bg-brandBlue/10 text-brandBlue flex items-center justify-center text-xl"><i class="fa-solid fa-award"></i></div>
+<h3 class="text-xl font-bold font-serif text-brandNavy">100% Certified Crew</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Trained in European hygiene standards, delicate fabric handling, and specialized high-pressure steam extraction for residential and corporate spaces.</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-primary">
+<i class="fa-solid fa-circle-check text-emerald-500"></i><span class="">Hospital-Grade Verification</span>
+</div>
+</div>
+<div class="bg-gradient-to-b from-white to-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+<h3 class="text-xl font-bold font-serif text-brandNavy">Industrial Kärcher Fleet</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Equipped with commercial-grade Puzzi spray extraction machines, high-temp steamers, and rotary scrubbers that extract 99.8% of micro-allergens.</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-primary">
+<i class="fa-solid fa-circle-check text-emerald-500"></i><span class="">Precision German Machinery</span>
+</div>
+</div>
+<div class="bg-gradient-to-b from-white to-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="w-12 h-12 rounded-2xl bg-brandNavy/5 text-brandNavy flex items-center justify-center text-xl"><i class="fa-solid fa-shield-halved"></i></div>
+<h3 class="text-xl font-bold font-serif text-brandNavy">Insured &amp; Verified</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Backed by Uganda's top institutional partners for absolute peace of mind. Full police clearance, property liability insurance, and supervisor audits.</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-primary">
+<i class="fa-solid fa-circle-check text-emerald-500"></i><span class="">Zero-Risk Guarantee</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MasterclassSection -->
+<!-- BEGIN: FAQSection -->
+<section class="py-20 bg-white" id="faq">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-5 space-y-6">
+<span class="text-xs font-bold uppercase tracking-widest text-brandBlue">• Frequently Asked Questions</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-brandNavy font-serif leading-tight">
+              Common Questions About Our Cleaning Services
+            </h2>
+<p class="text-slate-600 text-sm leading-relaxed">
+              Find instant answers to questions regarding booking, safety standards, custom quotes, and equipment handling across Kampala and Entebbe.
+            </p>
+<div class="bg-gradient-to-tr from-brandNavy to-brandNavy-card text-white rounded-3xl p-6 shadow-xl relative overflow-hidden">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-2xl bg-brandBlue flex items-center justify-center text-white text-xl">
+<i class="fa-solid fa-headset"></i>
+</div>
+<div>
+<h4 class="font-bold text-base">Have A Custom Request?</h4>
+<p class="text-xs text-brandBlue-light">Talk directly with Maya's support desk</p>
+</div>
+</div>
+<p class="text-xs text-slate-300 mb-6">
+                Our support desk is operational 7 days a week from 6:30 AM to 9:00 PM for dispatch, quotes, and queries.
+              </p>
+<div class="flex flex-col sm:flex-row gap-3">
+<a class="flex-1 bg-white hover:bg-slate-100 text-brandNavy font-bold py-2.5 px-4 rounded-xl text-xs text-center transition" href="tel:0762465788">
+<i class="fa-solid fa-phone text-brandBlue mr-1"></i> 0762465788
+                </a>
+<a class="flex-1 bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-2.5 px-4 rounded-xl text-xs text-center transition" href="https://wa.me/256762465788">
+<i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                </a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-4" id="faq-accordion">
+<!-- Item 1 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm transition">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-bold text-brandNavy text-base hover:bg-slate-50 transition" type="button">
+<span class="">What cleaning solutions and equipment do you bring?</span>
+<i class="fa-solid text-sm transition-transform fa-plus text-slate-400"></i>
+</button>
+<div class="faq-content px-5 pb-5 text-sm text-slate-600 leading-relaxed block border-t border-slate-100 pt-3 hidden">
+                AskMaya arrives with a full commercial setup: heavy-duty wet/dry extraction vacuums, high-temperature steam machines, micro-fiber scrubbers, ladder extensions, and non-toxic, eco-certified degreasers. You don't need to provide a single mop or sponge.
+              </div>
+</div>
+<!-- Item 2 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm transition">
+<button aria-expanded="true" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-bold text-brandNavy text-base hover:bg-slate-50 transition" type="button">
+<span class="">How do I get a cleaning quote?</span>
+<i class="fa-solid text-sm transition-transform fa-minus text-brandBlue"></i>
+</button>
+<div class="faq-content px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                Quotes are based on the property size, room count, and type of cleaning needed. Contact our team on WhatsApp or by phone for a quote tailored to your needs.
+              </div>
+</div>
+<!-- Item 3 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm transition">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-bold text-brandNavy text-base hover:bg-slate-50 transition" type="button">
+<span class="">Can I customize my cleaning package or schedule weekend slots?</span>
+<i class="fa-solid fa-plus text-slate-400 text-sm transition-transform"></i>
+</button>
+<div class="faq-content px-5 pb-5 text-sm text-slate-600 leading-relaxed hidden border-t border-slate-100 pt-3">
+                Yes, absolutely! We operate 7 days a week, including Saturdays and Sundays, with early morning and evening slots. You can specify exact focus areas like sofa steam extraction, window tracks, or kitchen oven degreasing.
+              </div>
+</div>
+<!-- Item 4 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm transition">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-bold text-brandNavy text-base hover:bg-slate-50 transition" type="button">
+<span class="">Do I need to be home during the cleaning process?</span>
+<i class="fa-solid fa-plus text-slate-400 text-sm transition-transform"></i>
+</button>
+<div class="faq-content px-5 pb-5 text-sm text-slate-600 leading-relaxed hidden border-t border-slate-100 pt-3">
+                You can be present or leave our trusted team to work while you are at work or running errands. All crew members carry verified national IDs and work under a designated site supervisor. We notify you 30 minutes before completion for your final walkthrough.
+              </div>
+</div>
+<!-- Item 5 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm transition">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-bold text-brandNavy text-base hover:bg-slate-50 transition" type="button">
+<span class="">Are your chemicals safe for newborns, infants, and pets?</span>
+<i class="fa-solid fa-plus text-slate-400 text-sm transition-transform"></i>
+</button>
+<div class="faq-content px-5 pb-5 text-sm text-slate-600 leading-relaxed hidden border-t border-slate-100 pt-3">
+                Yes. Our routine and deep cleaning formulations are 100% biodegradable and hypoallergenic. For pest control and fumigation, we utilize low-toxicity micro-encapsulated solutions designed to dry clean without lingering pungent chemical smells.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FAQSection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="py-20 bg-slate-50 border-t border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+<span class="text-xs font-bold uppercase tracking-widest text-brandBlue">• What Our Clients Say</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-brandNavy font-serif">Clean Spaces, Happy Clients</h2>
+<p class="text-slate-600 text-sm">Read unvarnished feedback from homeowners and facility managers in Uganda.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex text-amber-400 text-sm">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-600 text-sm italic leading-relaxed">
+                "AskMaya transformed our 4-bedroom home in Muyenga after renovation. The cement dust on our floor tiles and windows seemed impossible, but their team brought them back to brand new condition. Highly recommend!"
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-6 border-t border-slate-100 mt-6">
+<div class="w-10 h-10 rounded-full bg-brandBlue text-white font-bold flex items-center justify-center text-sm">
+                EK
+              </div>
+<div>
+<h5 class="text-sm font-bold text-brandNavy">Emily Kasule</h5>
+<p class="text-xs text-slate-500">Homeowner, Muyenga</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-brandNavy text-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between relative overflow-hidden">
+<div class="space-y-4">
+<div class="flex text-amber-400 text-sm">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-200 text-sm italic leading-relaxed">
+                "Their sofa steam extraction is unmatched in Kampala. They eliminated tough coffee stains from our cream sectional that two previous cleaners could not touch. Timely, professional, and very courteous."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-6 border-t border-white/10 mt-6">
+<div class="w-10 h-10 rounded-full bg-brandCyan text-brandNavy font-bold flex items-center justify-center text-sm">
+                PA
+              </div>
+<div>
+<h5 class="text-sm font-bold text-white">Patrick Ayebare</h5>
+<p class="text-xs text-slate-300">Managing Partner, Kololo</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex text-amber-400 text-sm">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-600 text-sm italic leading-relaxed">
+                "Maya's odorless pest control solved our persistent cockroach problem in Entebbe in just one visit. Zero smell, completely safe for my twins. Booking them for our bi-monthly maintenance forever."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-6 border-t border-slate-100 mt-6">
+<div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">
+                JT
+              </div>
+<div>
+<h5 class="text-sm font-bold text-brandNavy">Juliet Tumusiime</h5>
+<p class="text-xs text-slate-500">Entebbe Resident</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: CTABannerSection -->
+<section class="py-16 bg-gradient-to-r from-brandNavy via-brandNavy-card to-brandNavy-dark text-white relative overflow-hidden" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
+<span class="inline-block px-4 py-1.5 rounded-full bg-brandBlue/20 border border-brandBlue/40 text-brandCyan text-xs uppercase font-bold tracking-widest">
+          ✨ Ready For That Fresh, Spotless Feel?
+        </span>
+<h2 class="text-3xl sm:text-5xl font-black font-serif tracking-tight max-w-2xl mx-auto">
+          Experience Five-Star Hygiene Standards Today
+        </h2>
+<p class="text-slate-300 text-base max-w-xl mx-auto">
+          Connect with Maya now for immediate availability in Kampala &amp; Entebbe. Instant free phone estimate in under 2 minutes.
+        </p>
+<div class="flex flex-wrap justify-center items-center gap-4 pt-4">
+<a class="bg-brandBlue hover:bg-brandBlue-hover text-white font-extrabold px-8 py-4 rounded-full shadow-lg shadow-brandBlue/40 flex items-center gap-3 transition" href="tel:0762465788">
+<i class="fa-solid fa-phone-volume text-lg"></i>
+<span class="">Call 0762465788</span>
+</a>
+<a class="bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold px-8 py-4 rounded-full shadow-lg transition flex items-center gap-3" href="https://wa.me/256762465788?text=Hello%20Maya%2C%20I%20want%20to%20schedule%20a%20cleaning%20session" target="_blank">
+<i class="fa-brands fa-whatsapp text-xl"></i>
+<span class="">WhatsApp Dispatch</span>
+</a>
+</div>
+</div>
+</section>
+<!-- END: CTABannerSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#040e29] text-slate-400 pt-16 pb-12 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+<!-- Brand Info -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="AskMaya Footer Logo" class="h-14 w-auto object-contain bg-white/5 p-1 rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEfREC_irol3nLFNoiEPwfTosx01PgXzkJ1Yte6xhZoQwxhdm4m4-ieuUWuoh6cj5S3oSNUMyHLZxuuLqD4i4SBZQkH4YDwo1R0kUwRPtliXkuB3DO6Sp4DgXA7DfhbNyRtXcMj9hSlcvhD-_nxJ8aZ5MIPPUjmYOQKxaarIZyL9KYgwh3pmi87PpeWJMlo6Z5Jux_eXGkGk2i1ZdZPyeLlXa6iY9onZz7tlK9c-rC0HoalP528DVRPPtHDVWWtm-0vQ">
+<div>
+<span class="text-2xl font-serif font-bold text-white">Ask<span class="text-brandBlue">Maya</span></span>
+<p class="text-[10px] uppercase font-bold tracking-widest text-brandCyan">We Clean It All</p>
+</div>
+</div>
+<p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Uganda's premier cleaning, detailing, and eco pest management service provider. Serving residential estates, commercial buildings, diplomatic residences, and luxury short-lets across Kampala and Entebbe.
+          </p>
+<div class="flex items-center gap-3 pt-2">
+<a aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brandBlue text-white flex items-center justify-center transition text-xs" href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+<a aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brandBlue text-white flex items-center justify-center transition text-xs" href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a aria-label="WhatsApp" class="w-8 h-8 rounded-full bg-white/5 hover:bg-emerald-500 text-white flex items-center justify-center transition text-xs" href="https://wa.me/256762465788">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+<a aria-label="Phone" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brandBlue text-white flex items-center justify-center transition text-xs" href="tel:0762465788">
+<i class="fa-solid fa-phone"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold uppercase text-white tracking-wider">Quick Links</h4>
+<ul class="space-y-2 text-xs"><li class=""><a class="hover:text-brandBlue transition" href="#home">Home</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#about">About Us</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#services">Our Services</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#masterclass">Masterclass</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#team">Cleaning Crew</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#faq">FAQs</a></li></ul>
+</div>
+<!-- Our Services -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold uppercase text-white tracking-wider">Our Services</h4>
+<ul class="space-y-2 text-xs">
+<li class=""><a class="hover:text-brandBlue transition" href="#services">Residential Deep Cleaning</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#services">Office &amp; Commercial Sanitization</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#services">Sofa &amp; Carpet Steam Shampoo</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#services">Car Valet &amp; Interior Extraction</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#services">Eco Pest Control &amp; Fumigation</a></li>
+<li class=""><a class="hover:text-brandBlue transition" href="#services">Post-Construction Handover</a></li>
+</ul>
+</div>
+<!-- Contact & Hours -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold uppercase text-white tracking-wider">Contact &amp; Hours</h4>
+<div class="space-y-2 text-xs">
+<p class="flex items-center gap-2">
+<i class="fa-solid fa-phone text-brandBlue"></i>
+<a class="text-white hover:text-brandBlue font-bold" href="tel:0762465788">0762465788</a>
+</p>
+<p class="flex items-center gap-2">
+<i class="fa-brands fa-whatsapp text-emerald-400"></i>
+<a class="hover:text-white" href="https://wa.me/256762465788">256 762 465 788</a>
+</p>
+<p class="flex items-center gap-2">
+<i class="fa-solid fa-location-dot text-brandCyan"></i>
+<span class="">Kampala &amp; Entebbe, Uganda</span>
+</p>
+<p class="text-slate-400 pt-1">
+              Mon - Sun: 6:30 AM - 8:30 PM<br>
+              Emergency Dispatch Available
+            </p>
+</div>
+</div>
+</div>
+<!-- Watermark & Copyright -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+<p class="">© 2026 AskMaya Cleaning Services. All Rights Reserved. Motto: "WE CLEAN IT ALL"</p>
+<div class="flex items-center space-x-6">
+<a class="hover:text-slate-300" href="#">Terms &amp; Conditions</a>
+<a class="hover:text-slate-300" href="#">Privacy Policy</a>
+<a class="hover:text-slate-300" href="#faq">Customer Support</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<div class="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3 sm:bottom-7 sm:right-7" id="maya-assistant">
+  <section aria-labelledby="maya-title" class="hidden w-96 max-w-[calc(100vw-2.5rem)] overflow-hidden rounded-[28px] border border-cyan-200/80 bg-[#eaf3f5] p-2.5 shadow-2xl shadow-slate-900/25" id="maya-panel">
+    <header class="mb-2.5 flex items-center justify-between rounded-2xl border border-white/10 bg-[#051336] px-5 py-4 text-white shadow-lg">
+      <div class="flex items-center gap-3">
+        <img alt="AskMaya logo" class="h-11 w-11 rounded-xl border border-white/30 bg-white object-contain p-0.5 shadow-md" src="/askmaya_logo.jpeg">
+        <div>
+          <h2 class="font-bold" id="maya-title">Maya</h2>
+          <p class="text-xs text-cyan-100">AskMaya client assistant</p>
+        </div>
+      </div>
+      <button aria-label="Close chat and return to the website" class="flex h-9 w-9 items-center justify-center rounded-full text-slate-200 transition hover:bg-white/10 hover:text-white" id="maya-close" type="button">
+        <i class="maya-mobile-back fa-solid fa-arrow-left" aria-hidden="true"></i>
+        <i class="maya-desktop-close fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </header>
+    <div aria-live="polite" class="flex h-80 flex-col gap-3 overflow-y-auto rounded-2xl border border-slate-200 bg-white p-4 shadow-inner" id="maya-messages" role="log">
+      <div class="max-w-[90%] self-start rounded-2xl rounded-tl-sm bg-white p-3 text-sm leading-relaxed text-slate-700 shadow-sm">
+        Hi! I’m Maya. Ask me about AskMaya’s services, quotes, safety, or booking in Kampala and Entebbe.
+      </div>
+      <div class="flex flex-wrap gap-2" id="maya-suggestions">
+        <button class="rounded-full border border-brandBlue/20 bg-white px-3 py-2 text-xs font-semibold text-brandNavy transition hover:border-brandBlue hover:bg-brandBlue-light" type="button">What services do you offer?</button>
+        <button class="rounded-full border border-brandBlue/20 bg-white px-3 py-2 text-xs font-semibold text-brandNavy transition hover:border-brandBlue hover:bg-brandBlue-light" type="button">How do I get a cleaning quote?</button>
+        <button class="rounded-full border border-brandBlue/20 bg-white px-3 py-2 text-xs font-semibold text-brandNavy transition hover:border-brandBlue hover:bg-brandBlue-light" type="button">How do I book?</button>
+      </div>
+    </div>
+    <div class="mt-2.5 rounded-2xl border border-white bg-white p-3 shadow-sm">
+      <form class="flex items-center gap-2" id="maya-form">
+        <label class="sr-only" for="maya-input">Ask Maya a question</label>
+        <input autocomplete="off" class="min-w-0 flex-1 rounded-full border-slate-300 px-4 py-2.5 text-sm focus:border-brandBlue focus:ring-brandBlue" id="maya-input" maxlength="500" placeholder="Type your question..." required>
+        <button aria-label="Send message" class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-brandBlue text-white transition hover:bg-brandBlue-hover" type="submit">
+          <i class="fa-solid fa-paper-plane text-sm" aria-hidden="true"></i>
+        </button>
+      </form>
+      <p class="mt-2 text-center text-[10px] text-slate-500">For confirmed availability or a custom quote, contact our team.</p>
+      <div class="mt-2 flex justify-center gap-4 text-xs font-semibold">
+        <a class="text-emerald-700 hover:text-emerald-800" href="https://wa.me/256762465788" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp mr-1" aria-hidden="true"></i>WhatsApp</a>
+        <a class="text-brandNavy hover:text-brandBlue" href="tel:0762465788"><i class="fa-solid fa-phone mr-1" aria-hidden="true"></i>Call us</a>
+      </div>
+    </div>
+  </section>
+  <button aria-controls="maya-panel" aria-expanded="false" aria-label="Open Maya client assistant" class="flex items-center gap-3 rounded-full bg-brandBlue px-5 py-4 font-bold text-white shadow-xl shadow-blue-900/25 transition hover:-translate-y-0.5 hover:bg-brandBlue-hover focus:outline-none focus:ring-4 focus:ring-brandBlue/30" id="maya-launcher" type="button">
+    <span class="relative flex h-7 w-7 items-center justify-center rounded-full bg-white/20"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></span>
+    <span>Chat with Maya</span>
+  </button>
+</div>
+</div>
+<!-- BEGIN: ClientPortalModal -->
+<div class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-2 sm:p-4 md:p-6" id="client-portal-modal" onclick="if(event.target === this) window.closePortalModal()">
+<div class="bg-white w-full max-w-2xl rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[92vh] relative z-10">
+<div class="bg-[#051336] text-white px-6 py-4 flex items-center justify-between border-b border-white/10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-brandBlue/20 border border-cyan-400/40 flex items-center justify-center text-cyan-300 text-lg shadow-inner">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-lg font-bold font-serif">AskMaya Sector Portal</h3>
+<span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full">Active VIP Session</span>
+</div>
+<p class="text-xs text-slate-300">Hospital-Grade Disinfection &amp; Property Sector Management</p>
+</div>
+</div>
+<button aria-label="Close Portal" class="text-slate-300 hover:text-white bg-white/10 hover:bg-white/20 p-2.5 rounded-full transition duration-150 flex items-center justify-center cursor-pointer" onclick="window.closePortalModal()" type="button">
+<i class="fa-solid fa-plus rotate-45 text-base"></i>
+</button>
+</div>
+<div class="p-6 overflow-y-auto space-y-6 bg-slate-50 flex-1">
+<div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-brandBlue text-white font-black text-lg flex items-center justify-center shadow-md font-serif">SN</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="text-lg font-bold text-brandNavy">Dr. Sarah Nankya</h4>
+<span class="bg-brandBlue/10 text-brandBlue text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brandBlue/20">Premium VIP</span>
+</div>
+<p class="text-xs text-slate-500 mt-0.5 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandCyan"></i> Plot 14, Kyadondo Road, Nakasero • #AM-8842</p>
+</div>
+</div>
+<div class="text-right">
+<span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-500/20 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span> Verified Session
+</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-white p-3.5 rounded-2xl border border-slate-200 text-center">
+<span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Active Cleans</span>
+<p class="text-xl font-black text-brandNavy font-serif mt-1">2 Running</p>
+<span class="text-[10px] text-emerald-600 font-semibold">On-Site Now</span>
+</div>
+<div class="bg-white p-3.5 rounded-2xl border border-slate-200 text-center">
+<span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Invoices</span>
+<p class="text-xl font-black text-brandNavy font-serif mt-1">On file</p>
+<span class="text-[10px] text-brandBlue font-semibold">Retainer Cleared</span>
+</div>
+<div class="bg-white p-3.5 rounded-2xl border border-slate-200 text-center">
+<span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Hygiene Audit</span>
+<p class="text-xl font-black text-amber-500 font-serif mt-1">99.4%</p>
+<span class="text-[10px] text-slate-500 font-semibold">Hospital-Grade</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="block text-xs font-bold text-brandNavy uppercase tracking-wider">Managed Sectors &amp; Services</label>
+<span class="text-[11px] text-brandBlue font-bold">6 Sectors Assigned</span>
+</div>
+<div class="grid sm:grid-cols-2 gap-2.5">
+<div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-blue-50 text-brandBlue flex items-center justify-center text-sm flex-shrink-0">
+<i class="fa-solid fa-house-chimney-window"></i>
+</div>
+<div class="min-w-0 flex-1">
+<p class="text-xs font-bold text-brandNavy truncate">Domestic Deep Clean</p>
+<p class="text-[10px] text-slate-500">Villa Pavers &amp; 8 Rooms</p>
+</div>
+<span class="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-1.5 py-0.5 rounded">Active</span>
+</div>
+<div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-amber-400/15 text-amber-500 flex items-center justify-center text-sm flex-shrink-0">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+</div>
+<div class="min-w-0 flex-1">
+<p class="text-xs font-bold text-brandNavy truncate">Mobile Car Detailing</p>
+<p class="text-[10px] text-slate-500">3 Land Cruisers / SUV</p>
+</div>
+<span class="text-[10px] text-brandBlue font-bold bg-brandBlue/10 px-1.5 py-0.5 rounded">Fleet</span>
+</div>
+<div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center text-sm flex-shrink-0">
+<i class="fa-solid fa-spray-can-sparkles"></i>
+</div>
+<div class="min-w-0 flex-1">
+<p class="text-xs font-bold text-brandNavy truncate">Events Turnaround</p>
+<p class="text-[10px] text-slate-500">Diplomatic Reception</p>
+</div>
+<span class="text-[10px] text-purple-600 font-bold bg-purple-50 px-1.5 py-0.5 rounded">Scheduled</span>
+</div>
+<div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center text-sm flex-shrink-0">
+<i class="fa-solid fa-couch"></i>
+</div>
+<div class="min-w-0 flex-1">
+<p class="text-xs font-bold text-brandNavy truncate">Upholstery &amp; Steam</p>
+<p class="text-[10px] text-slate-500">180°C Kärcher Puzzi</p>
+</div>
+<span class="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-1.5 py-0.5 rounded">Certified</span>
+</div>
+</div>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row gap-3">
+<button class="flex-1 bg-brandNavy hover:bg-brandBlue text-white font-bold py-3.5 px-5 rounded-xl text-xs transition shadow-md flex items-center justify-center gap-2 cursor-pointer" onclick="window.showFullManagement()" type="button">
+<i class="fa-solid fa-shield-halved text-brandCyan"></i> Open Full Sector Management Dashboard
+</button>
+<button class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-3.5 px-5 rounded-xl text-xs transition cursor-pointer" onclick="window.closePortalModal()" type="button">
+Close
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- END: ClientPortalModal -->
+<!-- BEGIN: PortalFullViewDashboard -->
+<div class="hidden min-h-screen bg-[#f6fafe] text-slate-800" id="portal-fullview">
+<header class="bg-[#051336] text-white sticky top-0 z-40 shadow-xl border-b border-cyan-500/20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[100px] flex items-center justify-between py-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-brandBlue/20 border border-brandCyan/40 flex items-center justify-center text-brandCyan text-2xl shadow-inner">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<div>
+<div class="flex items-center gap-2.5">
+<h1 class="text-xl sm:text-2xl font-bold font-serif">AskMaya Sector Portal</h1>
+<span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full">Active VIP Session</span>
+</div>
+<p class="text-xs text-brandBlue-light">Hospital-Grade Disinfection &amp; Client Property Management</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="inline-flex items-center gap-2 bg-gradient-to-r from-brandBlue to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-xs sm:text-sm font-bold py-2.5 px-5 rounded-full shadow-md transition duration-200 cursor-pointer" onclick="window.returnToMainWebsite()" type="button">
+<i class="fa-solid fa-arrow-left text-xs"></i>
+<span class="">← Back to Main Website / Book New Order</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+<div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/90 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex items-center gap-5">
+<div class="w-16 h-16 rounded-2xl bg-brandBlue text-white font-black text-2xl flex items-center justify-center shadow-lg font-serif">SN</div>
+<div>
+<div class="flex items-center gap-2.5 flex-wrap">
+<h2 class="text-2xl font-extrabold text-brandNavy font-serif">Dr. Sarah Nankya</h2>
+<span class="bg-brandBlue/10 text-brandBlue text-xs font-bold px-3 py-1 rounded-full border border-brandBlue/20">Premium VIP Residential &amp; Corporate</span>
+<span class="bg-emerald-50 text-emerald-600 text-xs font-bold px-2.5 py-0.5 rounded-full border border-emerald-500/20 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> Verified Account
+            </span>
+</div>
+<p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5">
+<i class="fa-solid fa-location-dot text-brandCyan"></i> Plot 14, Kyadondo Road, Nakasero, Kampala • Account ID: #AM-8842
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<a class="text-xs font-bold bg-slate-100 hover:bg-slate-200 text-brandNavy px-4 py-2.5 rounded-xl transition flex items-center gap-2" href="tel:0762465788">
+<i class="fa-solid fa-phone text-brandBlue"></i> Direct Dispatch
+        </a>
+<a class="text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm" href="https://wa.me/256762465788?text=Hello%20AskMaya%20Operations%2C%20Dr.%20Sarah%20Nankya%20requesting%20supervisor%20briefing" target="_blank">
+<i class="fa-brands fa-whatsapp text-sm"></i> Sector Lead WhatsApp
+        </a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+<div class="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Active Cleans</span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+</div>
+<p class="text-3xl font-black text-brandNavy mt-3 font-serif">2 Active</p>
+<p class="text-xs text-emerald-600 font-semibold mt-1">In Progress across Nakasero</p>
+</div>
+<div class="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Total Sessions</span>
+<i class="fa-solid fa-calendar-check text-brandBlue text-sm"></i>
+</div>
+<p class="text-3xl font-black text-brandNavy mt-3 font-serif">18 Sessions</p>
+<p class="text-xs text-slate-500 font-semibold mt-1">Completed with Zero Incident</p>
+</div>
+<div class="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Account Overview</span>
+<i class="fa-solid fa-receipt text-amber-500 text-sm"></i>
+</div>
+<p class="text-3xl font-black text-brandNavy mt-3 font-serif">Managed</p>
+<p class="text-xs text-brandBlue font-semibold mt-1">Contact the team for billing details</p>
+</div>
+<div class="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Hygiene Audit</span>
+<i class="fa-solid fa-award text-amber-400 text-sm"></i>
+</div>
+<p class="text-3xl font-black text-brandNavy mt-3 font-serif">99.4%</p>
+<p class="text-xs text-amber-500 font-semibold mt-1">Hospital-Grade Compliance</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex items-center justify-between">
+<div class="space-y-1">
+<span class="text-xs font-bold uppercase tracking-widest text-brandBlue">Comprehensive Service Management</span>
+<h3 class="text-2xl font-bold font-serif text-brandNavy">Managed Sectors &amp; Service Tiers</h3>
+</div>
+<span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">6 Sectors Active</span>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-2xl bg-blue-50 text-brandBlue flex items-center justify-center text-xl">
+<i class="fa-solid fa-house-chimney-window"></i>
+</div>
+<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">Active Sector</span>
+</div>
+<h4 class="text-lg font-bold font-serif text-brandNavy">Domestic &amp; Exterior Deep Clean</h4>
+<p class="text-xs text-slate-600 leading-relaxed">Complete architectural turnover: 8 en-suite bedrooms, high-pressure compound paver washing, rooftop solar wipedown, perimeter gutter clearance, and marble floor revitalization.</p>
+<div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs space-y-1.5">
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Room Deep Clean &amp; Degreasing</span><span class="font-bold text-brandNavy">8 Rooms</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Compound Pavers &amp; Perimeter</span><span class="font-bold text-brandNavy">120 Bar Kärcher</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Gutter Flush &amp; Solar Paneling</span><span class="font-bold text-brandNavy">Completed</span></div>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500">Supervisor: Mukasa Edrine</span>
+<span class="text-xs font-bold text-brandBlue">Cycle: Weekly</span>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-2xl bg-amber-400/15 text-amber-500 flex items-center justify-center text-xl">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+</div>
+<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-brandBlue/10 text-brandBlue border border-brandBlue/20">On-Demand Fleet</span>
+</div>
+<h4 class="text-lg font-bold font-serif text-brandNavy">Mobile Car Detailing</h4>
+<p class="text-xs text-slate-600 leading-relaxed">On-site mobile valet unit with hot water engine steam, leather conditioner, micro-mist sanitization, and tire glaze.</p>
+<div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs space-y-1.5">
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Saloon (Sedan)</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Midsize SUV / Crossover</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Full-size 4x4 / Land Cruiser</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Van / Coaster / VIP Shuttle</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500">3 Vehicles Serviced</span>
+<span class="text-xs font-bold text-brandBlue">Valet Unit #2</span>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl">
+<i class="fa-solid fa-spray-can-sparkles"></i>
+</div>
+<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-purple-50 text-purple-600 border border-purple-200">Turnaround Ready</span>
+</div>
+<h4 class="text-lg font-bold font-serif text-brandNavy">Events &amp; Post-Party Turnaround</h4>
+<p class="text-xs text-slate-600 leading-relaxed">Rapid overnight restoration for banquets, diplomatic receptions, garden parties, and corporate galas across Kampala.</p>
+<div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs space-y-1.5">
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Up to 50 Guests Reception</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">50 - 150 Guests Gala</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Large Grounds &amp; Diplomatic</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500">Next: Diplomatic Dinner</span>
+<span class="text-xs font-bold text-brandBlue">Overnight Crew</span>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+<i class="fa-solid fa-couch"></i>
+</div>
+<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">Hospital Grade</span>
+</div>
+<h4 class="text-lg font-bold font-serif text-brandNavy">Upholstery &amp; Carpet Steam</h4>
+<p class="text-xs text-slate-600 leading-relaxed">Industrial Puzzi 10/1 deep injection extraction for Turkish wool carpets, L-shaped velvet sectionals, dining sets, and anti-allergen mattress steam wash.</p>
+<div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs space-y-1.5">
+<div class="flex justify-between text-slate-600 font-medium"><span class="">7-Seater Velvet Sectional</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Wool Rug Shampoo &amp; Dry</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Sanitization Standard</span><span class="font-bold text-emerald-600">180°C Steam</span></div>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500">Depot: Wambewo Marvin</span>
+<span class="text-xs font-bold text-brandBlue">Kärcher Fleet</span>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center text-xl">
+<i class="fa-solid fa-broom"></i>
+</div>
+<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">Handover Specialized</span>
+</div>
+<h4 class="text-lg font-bold font-serif text-brandNavy">Post Construction Clean</h4>
+<p class="text-xs text-slate-600 leading-relaxed">Paint fleck removal, tile grout acid wash, window silicone scraper detailing, and cement residue extraction for new and renovated architectural builds.</p>
+<div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs space-y-1.5">
+<div class="flex justify-between text-slate-600 font-medium"><span class="">New Villa Handover</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Cement &amp; Paint Scrub</span><span class="font-bold text-brandNavy">Rotary Scrubber</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Safety Compliance</span><span class="font-bold text-emerald-600">Zero Scratch</span></div>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500">Lead: Trevor Donald</span>
+<span class="text-xs font-bold text-brandBlue">Heavy Gear</span>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center text-xl">
+<i class="fa-solid fa-shield-virus"></i>
+</div>
+<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">6-Month Shield</span>
+</div>
+<h4 class="text-lg font-bold font-serif text-brandNavy">Fumigation &amp; Pest Defense</h4>
+<p class="text-xs text-slate-600 leading-relaxed">Targeted micro-mist extermination for cockroaches, termites, bedbugs, and mosquitoes. Infant-safe, zero residual odor, and certified for food handling areas.</p>
+<div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs space-y-1.5">
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Compound &amp; Villa Barrier</span><span class="font-bold text-brandNavy">Custom Quote</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Kitchen Gel Baiting</span><span class="font-bold text-brandNavy">Included</span></div>
+<div class="flex justify-between text-slate-600 font-medium"><span class="">Warranty Period</span><span class="font-bold text-emerald-600">6 Months</span></div>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs font-bold text-slate-500">Audit: 100% Passed</span>
+<span class="text-xs font-bold text-brandBlue">Certified Chemicals</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 pb-12">
+<button class="w-full sm:w-auto bg-brandNavy hover:bg-brandBlue text-white font-bold text-sm px-8 py-3.5 rounded-full transition shadow-md flex items-center justify-center gap-2 cursor-pointer" onclick="window.returnToMainWebsite()" type="button">
+<i class="fa-solid fa-arrow-left"></i>
+<span class="">← Back to Main Website / Book New Order</span>
+</button>
+<a class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-8 py-3.5 rounded-full transition shadow-md flex items-center justify-center gap-2" href="https://wa.me/256762465788?text=Hello%20AskMaya%20Operations%2C%20Dr.%20Sarah%20Nankya%20requesting%20new%20order%20dispatch" target="_blank">
+<i class="fa-brands fa-whatsapp text-base"></i>
+<span class="">Dispatch New Cleaning Crew</span>
+</a>
+</div>
+</main>
+</div>
+<!-- END: PortalFullViewDashboard -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="faq-toggle-logic">
+  document.querySelectorAll('.faq-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+      document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.faq-toggle').forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        const ic = btn.querySelector('i');
+        ic.classList.remove('fa-minus', 'text-brandBlue');
+        ic.classList.add('fa-plus', 'text-slate-400');
+      });
+
+      if (!isExpanded) {
+        content.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+        icon.classList.remove('fa-plus', 'text-slate-400');
+        icon.classList.add('fa-minus', 'text-brandBlue');
+      }
+    });
+  });
+</script>
+<script data-purpose="mobile-navigation-toggle">
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  if (menuBtn && mobileNav) {
+    const setMenuOpen = (isOpen) => {
+      mobileNav.classList.toggle('hidden', !isOpen);
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+    };
+
+    menuBtn.addEventListener('click', () => {
+      setMenuOpen(mobileNav.classList.contains('hidden'));
+    });
+
+    mobileNav.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', () => setMenuOpen(false));
+    });
+  }
+</script>
+<script data-purpose="maya-client-assistant">
+  (() => {
+    const panel = document.getElementById('maya-panel');
+    const launcher = document.getElementById('maya-launcher');
+    const closeButton = document.getElementById('maya-close');
+    const form = document.getElementById('maya-form');
+    const input = document.getElementById('maya-input');
+    const messages = document.getElementById('maya-messages');
+    const suggestions = document.getElementById('maya-suggestions');
+
+    if (!panel || !launcher || !closeButton || !form || !input || !messages || !suggestions) return;
+
+    const openChat = () => {
+      panel.classList.remove('hidden');
+      launcher.setAttribute('aria-expanded', 'true');
+      input.focus();
+    };
+
+    const closeChat = () => {
+      panel.classList.add('hidden');
+      launcher.setAttribute('aria-expanded', 'false');
+      launcher.focus();
+    };
+
+    const addMessage = (text, sender) => {
+      const message = document.createElement('div');
+      message.className = sender === 'client'
+        ? 'max-w-[90%] self-end rounded-2xl rounded-tr-sm bg-brandNavy p-3 text-sm leading-relaxed text-white'
+        : 'max-w-[90%] self-start rounded-2xl rounded-tl-sm bg-white p-3 text-sm leading-relaxed text-slate-700 shadow-sm';
+      message.textContent = text;
+      messages.appendChild(message);
+      messages.scrollTop = messages.scrollHeight;
+      return message;
+    };
+
+    const conversation = [];
+    let isSending = false;
+
+    const sendMessage = async (question) => {
+      if (isSending || !question) return;
+      suggestions.remove();
+      addMessage(question, 'client');
+      input.value = '';
+      isSending = true;
+      form.querySelector('button[type="submit"]').disabled = true;
+      input.disabled = true;
+      const pendingMessage = addMessage('Maya is thinking…', 'assistant');
+
+      try {
+        const response = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: question, history: conversation.slice(-12) })
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || 'Maya is temporarily unavailable.');
+        if (typeof result.reply !== 'string' || !result.reply.trim()) {
+          throw new Error('Maya couldn’t create a response. Please try again or contact our team.');
+        }
+
+        pendingMessage.remove();
+        addMessage(result.reply, 'assistant');
+        conversation.push(
+          { role: 'user', parts: [{ text: question }] },
+          { role: 'model', parts: [{ text: result.reply }] }
+        );
+        if (conversation.length > 12) conversation.splice(0, conversation.length - 12);
+      } catch (error) {
+        pendingMessage.remove();
+        addMessage(`${error.message} You can reach our team on WhatsApp at 256 762 465 788 or call 0762465788.`, 'assistant');
+      } finally {
+        isSending = false;
+        form.querySelector('button[type="submit"]').disabled = false;
+        input.disabled = false;
+        input.focus();
+      }
+    };
+
+    launcher.addEventListener('click', () => {
+      if (panel.classList.contains('hidden')) openChat();
+      else closeChat();
+    });
+    closeButton.addEventListener('click', closeChat);
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('a[href^="#"]');
+      if (link && !panel.classList.contains('hidden')) closeChat();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !panel.classList.contains('hidden')) closeChat();
+    });
+    suggestions.addEventListener('click', (event) => {
+      const button = event.target.closest('button');
+      if (!button) return;
+      sendMessage(button.textContent.trim());
+    });
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      sendMessage(input.value.trim());
+    });
+  })();
+</script>
+<script data-purpose="client-portal-interactions">
+  window.openPortalModal = function() {
+    const modal = document.getElementById('client-portal-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+    }
+  };
+
+  window.closePortalModal = function() {
+    const modal = document.getElementById('client-portal-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+    }
+  };
+
+  window.showFullManagement = function() {
+    window.closePortalModal();
+    const web = document.getElementById('website-view');
+    const portal = document.getElementById('portal-fullview');
+    if (web) web.style.display = 'none';
+    if (portal) {
+      portal.classList.remove('hidden');
+      portal.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  window.returnToMainWebsite = function() {
+    const web = document.getElementById('website-view');
+    const portal = document.getElementById('portal-fullview');
+    if (portal) {
+      portal.classList.add('hidden');
+      portal.style.display = 'none';
+    }
+    if (web) {
+      web.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+</script>
+<!-- END: InteractiveScripts -->
+
+
+
+
+
+
+
+
+</body></html>
