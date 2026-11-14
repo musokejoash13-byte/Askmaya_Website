@@ -1,32 +1,35 @@
-# AskMaya website and Maya assistant
+# 🧹 Ask Maya — Online Cleaning Services Platform
 
-A website for Askmaya cleaning services.
+**Ask Maya** is a modern web application designed to streamline booking, pricing, and customer inquiries for residential and commercial cleaning services in Kampala, Uganda. Built with a responsive user interface, customized service workflows, and AI-assisted customer support, it helps clients explore packages and estimate service costs in just a few clicks.
 
-Maya uses Google's official `@google/genai` SDK and Gemini Developer API through a small Node.js server. The API key stays on the server and is never sent to the browser. The server serves the website and the `/api/chat` endpoint from the same origin.
+🔗 **Live Demo:** [askmaya-cleaning-services.vercel.app](https://askmaya-cleaning-services.vercel.app)
 
-## Run locally
+---
 
-1. Install Node.js 20.12 or newer.
-2. Create a Gemini API key in [Google AI Studio](https://aistudio.google.com/apikey).
-3. Copy `.env.example` to `.env` and replace the example value with your key.
-4. Run `npm start`, then open `http://127.0.0.1:3000`.
+## ✨ Key Features
 
-Do not open `index.html` directly with `file://`; the chat needs the local API server. Do not put the API key in `index.html` or commit `.env`.
+- **Specialized Service Categories:** Dynamic submenus for Home Cleaning, Deep Cleaning, Office/Commercial Plans, and Move-In/Move-Out packages.
+- **Interactive Booking & Billing Workflow:** Real-time service cost calculation based on property size, add-ons, and service frequency.
+- **AI-Powered Assistant (Gemini API):** Built-in smart assistant to answer customer inquiries, recommend cleaning packages, and guide users through service options.
+- **Mobile-First Responsive Design:** Optimized for seamless navigation and booking across smartphones, tablets, and desktops.
 
-The default model is `gemini-3.5-flash-lite`; override it with `GEMINI_MODEL` if needed. Chat requests use this model for service and package questions, booking inquiries, and other customer prompts. Rate limits and network errors return a retry/contact message rather than exposing provider details. The website and chat are served together, so deploy the Node server (or an equivalent server-side API route) rather than hosting only the HTML file. Use HTTPS for a public deployment and set `HOST=0.0.0.0` if the hosting platform requires it.
+---
 
-## Deploy to Render
+## 🛠️ Tech Stack
 
-The included `render.yaml` configures the whole website and chat API as one Render web service. Push the project folder to a GitHub or GitLab repository, then create a new Blueprint on Render and select that repository. When prompted, add `GEMINI_API_KEY` as a secret environment variable in Render; do not upload or commit `.env`. Render will install the locked dependencies, start the server, and check `/api/health`. The Blueprint uses Render's free plan, which may spin down after inactivity.
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+) / React *(deployed on Vercel)*
+- **Backend:** Node.js, Express.js *(Serverless API routes on Vercel)*
+- **AI Integration:** Google Gemini API (`@google/generative-ai`)
 
-## Deploy to Vercel
+---
 
-The `api/[...path].ts` function handles the chat and health endpoints; `vercel.json` routes `/` to the website page. Link the GitHub repository in Vercel or run `npx vercel` from the project folder. Add `GEMINI_API_KEY` as a sensitive Production environment variable in the Vercel project, then deploy with `npx vercel --prod`. Do not upload or commit `.env`; `.vercelignore` excludes local environment files. The `render.yaml` file is only for Render and can remain in the project.
+## 📂 Project Structure
 
-## Free-tier notes
-
-Gemini API free-tier access, supported models, quotas, regional availability, and terms can change. Google currently lists free input/output tokens for some models, with limited access and content-use terms; review the [Gemini API pricing](https://ai.google.dev/gemini-api/docs/pricing) and [terms](https://ai.google.dev/gemini-api/terms) before sending customer conversations. The application also limits chat requests per client IP, but that is not a substitute for production monitoring or provider-side quota controls.
-
-## Verify
-
-Run `npm test` for the local server and Gemini service tests. Tests use a mocked SDK client and do not require a real API key.
+```text
+askmaya-cleaning-services/
+├── public/                 # Static assets, icons, and images
+├── src/                    # Frontend components, stylesheets, and UI logic
+├── api/                    # Node.js serverless endpoints (Gemini AI handler)
+├── .env.example            # Template for required environment variables
+├── package.json            # Project dependencies and scripts
+└── README.md               # Project documentation
