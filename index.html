@@ -75,6 +75,12 @@
     .maya-mobile-back {
       display: none;
     }
+    #maya-panel > header {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      flex-shrink: 0;
+    }
     @media (min-width: 1280px) {
       .max-w-7xl {
         max-width: min(96vw, 1600px) !important;
@@ -91,6 +97,9 @@
         flex: 1 1 auto;
         height: auto;
         min-height: 8rem;
+      }
+      #maya-panel > div:last-child {
+        flex-shrink: 0;
       }
     }
     @media (max-width: 767px) {
@@ -164,14 +173,14 @@
 </div>
 </div>
 <!-- Desktop Navigation Links: spacious, comfortable text-base with pill hover styling -->
-<nav class="hidden lg:flex items-center space-x-1 xl:space-x-4 2xl:space-x-8 text-[13px] xl:text-[15px] font-semibold text-slate-200">
+<nav class="hidden lg:flex -translate-x-4 items-center space-x-1 xl:space-x-4 2xl:space-x-8 text-[13px] xl:text-[15px] font-semibold text-slate-200">
 <a class="text-brandCyan font-bold hover:text-white px-1.5 xl:px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#home">Home</a>
 <a class="hover:text-brandCyan px-1.5 xl:px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#about">About Us</a>
 <a class="hover:text-brandCyan px-1.5 xl:px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#services">Services</a>
 <a class="hover:text-brandCyan px-1.5 xl:px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#masterclass">Masterclass</a>
 <a class="hover:text-brandCyan px-1.5 xl:px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#team">Our Team</a>
 <a class="hover:text-brandCyan px-1.5 xl:px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#faq">FAQs</a>
-<a class="hover:text-brandCyan px-1.5 xl:px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="#contact">Contact</a>
+<a class="hover:text-brandCyan px-1.5 xl:px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20would%20like%20to%20contact%20your%20team">Contact</a>
 </nav>
 <!-- Header Actions: Client Portal -->
 <div class="hidden xl:flex items-center space-x-3 2xl:space-x-4">
@@ -199,7 +208,7 @@
 <a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#masterclass">Masterclass</a>
 <a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#team">Our Team</a>
 <a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#faq">FAQs</a>
-<a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="#contact">Contact</a>
+<a class="block py-2 text-slate-200 font-semibold hover:text-brandCyan" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20would%20like%20to%20contact%20your%20team">Contact</a>
 <button class="w-full flex items-center justify-between py-3 px-4 bg-white/10 hover:bg-white/15 text-white font-bold rounded-xl border border-white/15 mt-2 text-xs transition cursor-pointer" onclick="window.openPortalModal(); document.getElementById('mobile-nav').classList.add('hidden');" type="button">
 <span class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-brandCyan text-sm"></i><span class="">AskMaya Client Portal Login</span></span>
 <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider bg-emerald-500/20 px-2.5 py-1 rounded-full border border-emerald-500/30">Open Dashboard →</span>
@@ -229,7 +238,7 @@
             </p>
 <!-- CTA Cluster -->
 <div class="flex flex-wrap items-center gap-4 pt-2">
-<a class="bg-brandBlue hover:bg-brandBlue-hover text-white font-bold px-7 py-3.5 rounded-full shadow-lg shadow-brandBlue/30 hover:shadow-brandBlue/50 transition duration-200 flex items-center gap-3" href="#contact">
+<a class="bg-brandBlue hover:bg-brandBlue-hover text-white font-bold px-7 py-3.5 rounded-full shadow-lg shadow-brandBlue/30 hover:shadow-brandBlue/50 transition duration-200 flex items-center gap-3" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20would%20like%20a%20cleaning%20quote">
 <span class="">Get Instant Quote</span>
 <i class="fa-solid fa-arrow-right"></i>
 </a>
@@ -237,7 +246,7 @@
 <i class="fa-solid fa-phone-volume text-brandCyan"></i>
 <span class="">Call 0762465788</span>
 </a>
-<a class="bg-emerald-600/90 hover:bg-emerald-500 text-white font-bold px-5 py-3.5 rounded-full transition flex items-center gap-2" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20would%20like%20to%20schedule%20a%20cleaning%20visit" target="_blank">
+<a class="bg-emerald-600/90 hover:bg-emerald-500 text-white font-bold px-5 py-3.5 rounded-full transition flex items-center gap-2" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20would%20like%20to%20schedule%20a%20cleaning%20visit">
 <i class="fa-brands fa-whatsapp text-lg"></i>
 <span class="">WhatsApp Maya</span>
 </a>
@@ -454,7 +463,7 @@
    <div>
     <span class="text-sm font-bold text-slate-500">Custom Quote</span>
     </div>
-    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Domestic%20Deep%20Cleaning" target="_blank" aria-label="Book Domestic Deep Cleaning">
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Domestic%20Deep%20Cleaning" aria-label="Book Domestic Deep Cleaning">
       <i class="fa-solid fa-arrow-right text-xs"></i>
     </a>
   </div>
@@ -496,7 +505,7 @@
     <div>
       <span class="text-sm font-bold text-slate-500">Custom Quote</span>
     </div>
-    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Post-Construction%20Cleaning" target="_blank" aria-label="Book Post-Construction Cleaning">
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Post-Construction%20Cleaning" aria-label="Book Post-Construction Cleaning">
       <i class="fa-solid fa-arrow-right text-xs"></i>
     </a>
   </div>
@@ -540,7 +549,7 @@
     <div>
       <span class="text-sm font-bold text-slate-300">Custom Quote</span>
     </div>
-    <a class="w-10 h-10 rounded-full bg-brandBlue text-white flex items-center justify-center hover:bg-white hover:text-brandNavy transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Upholstery%20and%20Steam%20Extraction" target="_blank" aria-label="Book Upholstery and Steam Extraction">
+    <a class="w-10 h-10 rounded-full bg-brandBlue text-white flex items-center justify-center hover:bg-white hover:text-brandNavy transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Upholstery%20and%20Steam%20Extraction" aria-label="Book Upholstery and Steam Extraction">
       <i class="fa-solid fa-arrow-right text-xs"></i>
     </a>
   </div>
@@ -581,7 +590,7 @@
     <div>
       <span class="text-sm font-bold text-slate-500">Custom Quote</span>
     </div>
-    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Mobile%20Car%20Detailing" target="_blank" aria-label="Book Mobile Car Detailing">
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Mobile%20Car%20Detailing" aria-label="Book Mobile Car Detailing">
       <i class="fa-solid fa-arrow-right text-xs"></i>
     </a>
   </div>
@@ -622,7 +631,7 @@
     <div>
       <span class="text-sm font-bold text-slate-500">Custom Quote</span>
     </div>
-    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Event%20and%20Venue%20Turnaround" target="_blank" aria-label="Book Event and Venue Turnaround">
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-brandBlue transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Event%20and%20Venue%20Turnaround" aria-label="Book Event and Venue Turnaround">
       <i class="fa-solid fa-arrow-right text-xs"></i>
     </a>
   </div>
@@ -663,7 +672,7 @@
     <div>
       <span class="text-sm font-bold text-slate-500">Custom Quote</span>
     </div>
-    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-emerald-600 transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Fumigation%20and%20Pest%20Shield" target="_blank" aria-label="Book Fumigation and Pest Shield">
+    <a class="w-10 h-10 rounded-full bg-brandNavy text-white flex items-center justify-center group-hover:bg-emerald-600 transition shadow-md" href="https://wa.me/256762465788?text=Hello%20AskMaya%2C%20I%20want%20to%20book%20Fumigation%20and%20Pest%20Shield" aria-label="Book Fumigation and Pest Shield">
       <i class="fa-solid fa-arrow-right text-xs"></i>
     </a>
   </div>
@@ -746,7 +755,7 @@ Leading AskMaya with an uncompromising vision to redefine Uganda’s living and 
 <a class="inline-flex items-center gap-2 text-xs font-bold text-white bg-brandNavy hover:bg-brandBlue px-5 py-2.5 rounded-full transition shadow-md" href="tel:0762465788">
 <i class="fa-solid fa-phone text-xs"></i> Speak with CEO
 </a>
-<a class="inline-flex items-center gap-2 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 px-5 py-2.5 rounded-full transition shadow-md" href="https://wa.me/256762465788?text=Hello%20Nalikka%20Sumaya%2C%20I%20would%20like%20to%20inquire%20about%20AskMaya%20executive%20cleaning%20services" target="_blank">
+<a class="inline-flex items-center gap-2 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 px-5 py-2.5 rounded-full transition shadow-md" href="https://wa.me/256762465788?text=Hello%20Nalikka%20Sumaya%2C%20I%20would%20like%20to%20inquire%20about%20AskMaya%20executive%20cleaning%20services">
 <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp CEO
 </a>
 </div>
@@ -1171,7 +1180,7 @@ Field operations coordination, on-site team deployment, equipment logistics, and
 <i class="fa-solid fa-phone-volume text-lg"></i>
 <span class="">Call 0762465788</span>
 </a>
-<a class="bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold px-8 py-4 rounded-full shadow-lg transition flex items-center gap-3" href="https://wa.me/256762465788?text=Hello%20Maya%2C%20I%20want%20to%20schedule%20a%20cleaning%20session" target="_blank">
+<a class="bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold px-8 py-4 rounded-full shadow-lg transition flex items-center gap-3" href="https://wa.me/256762465788?text=Hello%20Maya%2C%20I%20want%20to%20schedule%20a%20cleaning%20session">
 <i class="fa-brands fa-whatsapp text-xl"></i>
 <span class="">WhatsApp Dispatch</span>
 </a>
@@ -1303,7 +1312,7 @@ Field operations coordination, on-site team deployment, equipment logistics, and
       </form>
       <p class="mt-2 text-center text-[10px] text-slate-500">For confirmed availability or a custom quote, contact our team.</p>
       <div class="mt-2 flex justify-center gap-4 text-xs font-semibold">
-        <a class="text-emerald-700 hover:text-emerald-800" href="https://wa.me/256762465788" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp mr-1" aria-hidden="true"></i>WhatsApp</a>
+        <a class="text-emerald-700 hover:text-emerald-800" href="https://wa.me/256762465788"><i class="fa-brands fa-whatsapp mr-1" aria-hidden="true"></i>WhatsApp</a>
         <a class="text-brandNavy hover:text-brandBlue" href="tel:0762465788"><i class="fa-solid fa-phone mr-1" aria-hidden="true"></i>Call us</a>
       </div>
     </div>
@@ -1474,7 +1483,7 @@ Close
 <a class="text-xs font-bold bg-slate-100 hover:bg-slate-200 text-brandNavy px-4 py-2.5 rounded-xl transition flex items-center gap-2" href="tel:0762465788">
 <i class="fa-solid fa-phone text-brandBlue"></i> Direct Dispatch
         </a>
-<a class="text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm" href="https://wa.me/256762465788?text=Hello%20AskMaya%20Operations%2C%20Dr.%20Sarah%20Nankya%20requesting%20supervisor%20briefing" target="_blank">
+<a class="text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm" href="https://wa.me/256762465788?text=Hello%20AskMaya%20Operations%2C%20Dr.%20Sarah%20Nankya%20requesting%20supervisor%20briefing">
 <i class="fa-brands fa-whatsapp text-sm"></i> Sector Lead WhatsApp
         </a>
 </div>
@@ -1656,7 +1665,7 @@ Close
 <i class="fa-solid fa-arrow-left"></i>
 <span class="">← Back to Main Website / Book New Order</span>
 </button>
-<a class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-8 py-3.5 rounded-full transition shadow-md flex items-center justify-center gap-2" href="https://wa.me/256762465788?text=Hello%20AskMaya%20Operations%2C%20Dr.%20Sarah%20Nankya%20requesting%20new%20order%20dispatch" target="_blank">
+<a class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-8 py-3.5 rounded-full transition shadow-md flex items-center justify-center gap-2" href="https://wa.me/256762465788?text=Hello%20AskMaya%20Operations%2C%20Dr.%20Sarah%20Nankya%20requesting%20new%20order%20dispatch">
 <i class="fa-brands fa-whatsapp text-base"></i>
 <span class="">Dispatch New Cleaning Crew</span>
 </a>

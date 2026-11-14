@@ -40,11 +40,15 @@ test('serves the website from the same origin as the API', async () => {
   assert.doesNotMatch(page, /680,000/);
   const header = page.match(/<header[\s\S]*?<\/header>/)?.[0];
   assert.ok(header);
-  assert.match(header, /href="#contact"/);
-  assert.doesNotMatch(header, /Book Online|tel:0762465788|wa\.me\/256762465788/);
+  const contactLinks = [...header.matchAll(/<a\b([^>]*)>Contact<\/a>/g)].map(([, attributes]) => attributes);
+  assert.equal(contactLinks.length, 2);
+  assert.ok(contactLinks.every((attributes) => /href="https:\/\/wa\.me\/256762465788\?text=/.test(attributes)));
+  assert.ok(contactLinks.every((attributes) => !/target="_blank"/.test(attributes)));
+  assert.doesNotMatch(header, /Book Online|tel:0762465788/);
   assert.match(page, /url\('\/assets\/hero-cleaning\.jpeg'\)/);
   assert.match(page, /tel:0762465788/);
   assert.match(page, /wa\.me\/256762465788/);
+  assert.doesNotMatch(page, /href="https:\/\/wa\.me\/[^"]*"[^>]*target="_blank"/);
 
   const heroImageResponse = await fetch(`${origin}/assets/hero-cleaning.jpeg`);
   assert.equal(heroImageResponse.status, 200);
