@@ -11,7 +11,7 @@ Maya uses Google's official `@google/genai` SDK and Gemini Developer API through
 3. Copy `.env.example` to `.env` and replace the example value with your key.
 4. Run `npm start`, then open `http://127.0.0.1:3000`.
 
-Do not open `code.html` directly with `file://`; the chat needs the local API server. Do not put the API key in `code.html` or commit `.env`.
+Do not open `index.html` directly with `file://`; the chat needs the local API server. Do not put the API key in `index.html` or commit `.env`.
 
 The default model is `gemini-3.5-flash-lite`; override it with `GEMINI_MODEL` if needed. Chat requests use this model for service and package questions, booking inquiries, and other customer prompts. Rate limits and network errors return a retry/contact message rather than exposing provider details. The website and chat are served together, so deploy the Node server (or an equivalent server-side API route) rather than hosting only the HTML file. Use HTTPS for a public deployment and set `HOST=0.0.0.0` if the hosting platform requires it.
 
@@ -21,7 +21,7 @@ The included `render.yaml` configures the whole website and chat API as one Rend
 
 ## Deploy to Vercel
 
-The root `server.ts` entry point lets Vercel run the Node.js website and chat API together. From the project folder, run `npx vercel` and follow the prompts to link your Vercel account and create a project. Add `GEMINI_API_KEY` in the Vercel project's Settings → Environment Variables, then deploy with `npx vercel --prod`. The `.vercelignore` file prevents local environment files from being uploaded. The `render.yaml` file is only for Render and can remain in the project.
+The `api/[...path].ts` function handles the chat and health endpoints; `vercel.json` routes `/` to the website page. Link the GitHub repository in Vercel or run `npx vercel` from the project folder. Add `GEMINI_API_KEY` as a sensitive Production environment variable in the Vercel project, then deploy with `npx vercel --prod`. Do not upload or commit `.env`; `.vercelignore` excludes local environment files. The `render.yaml` file is only for Render and can remain in the project.
 
 ## Free-tier notes
 

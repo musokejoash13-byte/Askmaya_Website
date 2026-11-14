@@ -71,6 +71,19 @@ async function readJsonBody(request) {
     throw Object.assign(new Error('Request is too large.'), { statusCode: 413 });
   }
 
+  if (request.body !== undefined) {
+    if (request.body && typeof request.body === 'object' && !Buffer.isBuffer(request.body)) {
+      return request.body;
+    }
+
+    try {
+      const body = Buffer.isBuffer(request.body) ? request.body.toString('utf8') : String(request.body);
+      return JSON.parse(body);
+    } catch {
+      throw Object.assign(new Error('Request body must be valid JSON.'), { statusCode: 400 });
+    }
+  }
+
   const chunks = [];
   let totalBytes = 0;
   for await (const chunk of request) {
@@ -103,7 +116,7 @@ function cleanHistory(history) {
   });
 }
 
-export function createServer({
+export function createRequestHandler({
   apiKey = process.env.GEMINI_API_KEY,
   model = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite',
   geminiClient
@@ -112,15 +125,15 @@ export function createServer({
     ? createGeminiService({ apiKey, model, client: geminiClient })
     : null;
 
-  return createHttpServer(async (request, response) => {
+  return async (request, response) => {
     const requestUrl = new URL(request.url || '/', 'http://localhost');
 
     if (request.method === 'GET' && requestUrl.pathname === '/api/health') {
       return sendJson(response, 200, { status: 'ok' });
     }
 
-    if (request.method === 'GET' && ['/', '/code.html', '/screen.png', '/askmaya_logo.jpeg', '/assets/hero-cleaning.jpeg'].includes(requestUrl.pathname)) {
-      const fileName = requestUrl.pathname === '/' ? 'code.html' : requestUrl.pathname.slice(1);
+    if (request.method === 'GET' && ['/', '/index.html', '/code.html', '/screen.png', '/askmaya_logo.jpeg', '/assets/hero-cleaning.jpeg'].includes(requestUrl.pathname)) {
+      const fileName = requestUrl.pathname === '/' ? 'index.html' : requestUrl.pathname.slice(1);
       try {
         const content = await readFile(path.join(projectRoot, fileName));
         response.writeHead(200, {
@@ -190,7 +203,11 @@ export function createServer({
       console.error('Gemini API request could not be completed:', error.message);
       return sendJson(response, 502, { error: 'Maya could not reach the assistant service. Please try again or contact our team.' });
     }
-  });
+  };
+}
+
+export function createServer(options) {
+  return createHttpServer(createRequestHandler(options));
 }
 
 const isMainModule = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
